@@ -9,8 +9,11 @@ using static UnityEngine.GraphicsBuffer;
 public class MufinController: MonoBehaviour
 {
     Vector3 _transform_target;
-    public float _speed = 5f;
+    public float _speed = 1f;
+    public float _timePouseOnTrack = 2f;
     private bool isWaiting = false;
+    GameObject _gameObject;
+
 
     [SerializeField] public float [] x_positons;
 
@@ -18,38 +21,60 @@ public class MufinController: MonoBehaviour
     private void Start()
     {
         //Start - > transition to postion;
+        //Animator to do 
         _transform_target.x = x_positons[position_counter];
+        _gameObject = this.gameObject;
         position_counter++;
     }
 
     private void Update()
     {
-        if (!isWaiting) 
+        if (!isWaiting)
         {
             if (transform.position.x <= _transform_target.x)
-            {
-                
+            { 
                 //Vector based     
                 transform.position = new Vector3(this.transform.position.x + 0.1f*_speed, this.transform.position.y, this.transform.position.z);
             }
             else
             {
-                StartCoroutine(Wait());        
+                if (position_counter <= 7)
+                    StartCoroutine(Wait());
+                else
+                    StartCoroutine(End());
             }
+
         }
     }
 
     IEnumerator Wait()
     {
         isWaiting = true; 
-        print("Start to wait");
-        _transform_target.x =x_positons[position_counter];
+        print("Start to wait");  
+       _transform_target.x = x_positons[position_counter];
+        //Can add specific sounds on different stations here
+
         position_counter++;
-        yield return new WaitForSeconds(2); 
+        yield return new WaitForSeconds(_timePouseOnTrack); 
         print("Wait complete");
-        isWaiting = false; 
+        isWaiting = false;
     }
 
+    IEnumerator End()
+    {
+        if (position_counter >= 7)
+        {
+            //Animation
+            
+            //Add music
+            
+            //Add to hud score/money
+            UIManager.Instance.Score();
+            //Destory
+            Destroy(gameObject);
 
+        }
+        yield return null;
+    }
 
 }
