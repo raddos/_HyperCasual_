@@ -5,11 +5,8 @@ using UnityEngine.Rendering.Universal;
 
 public class CheckRenderingPipeline : MonoBehaviour
 {
-   
     void Start()
-    {
-        Debug.Log(UniversalRenderPipeline.asset.name);
+    {       
+       //Debug.Log(UniversalRenderPipeline.asset.name);
     }
-
-    
 }
