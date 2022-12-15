@@ -251,3 +251,127 @@ Received Import Request.
   path: Assets/Brana/modeli/prefabi/cela traka2.prefab
   artifactKey: Guid(8d5ecac7425f3ad41b2b32e566f22f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Brana/modeli/prefabi/cela traka2.prefab using Guid(8d5ecac7425f3ad41b2b32e566f22f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84630209c7f6468f2362d4a2b803cebb') in 0.051077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2185.995031 seconds.
+  path: Assets/Brana/modeli/FIL2.fbx
+  artifactKey: Guid(7a31f858846dcc04785575ff425e572c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/FIL2.fbx using Guid(7a31f858846dcc04785575ff425e572c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f565dcf7dbfdf71b9360a20e35b0d75') in 0.047193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Brana/modeli/jedinica3.1.fbx
+  artifactKey: Guid(a358c59ff5afe41409329df8f45e1779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/jedinica3.1.fbx using Guid(a358c59ff5afe41409329df8f45e1779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a027a0a24166c6eeb4506e90657e9bf3') in 0.136891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Brana/modeli/traka.fbx
+  artifactKey: Guid(67b3db7b73242da4fb1f971bb5c31abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/traka.fbx using Guid(67b3db7b73242da4fb1f971bb5c31abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81956f9d836ef0d853f1db09384579d9') in 0.072030 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Brana/modeli/FIL3.fbx
+  artifactKey: Guid(4b74c8047ca48da4790ed4d183331d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/FIL3.fbx using Guid(4b74c8047ca48da4790ed4d183331d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a120ca26b8325b877eb7b2fcfc2fef1f') in 0.029001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Brana/modeli/rerna.fbx
+  artifactKey: Guid(4d8613a1f450c5544987a267a813b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/rerna.fbx using Guid(4d8613a1f450c5544987a267a813b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '350f78e28736ecf644ce7c9d1ed7b32b') in 0.050993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Brana/modeli/jedinica2.1.fbx
+  artifactKey: Guid(aa67d59a7b5deef4dadfe7c664dde0fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/jedinica2.1.fbx using Guid(aa67d59a7b5deef4dadfe7c664dde0fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddcb98f6f8447b37857f5ad5cd024a11') in 0.167586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.664457 seconds.
+  path: Assets/Brana/modeli/korpica sa filom i visnjom.fbx
+  artifactKey: Guid(7454ef3896031ed44afc042dec64fd83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/korpica sa filom i visnjom.fbx using Guid(7454ef3896031ed44afc042dec64fd83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '133e1deafbddeb708338e67667441e96') in 0.043490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Brana/modeli/korpica sa testom.fbx
+  artifactKey: Guid(3abc430ca05e20e48b4729344568d46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/korpica sa testom.fbx using Guid(3abc430ca05e20e48b4729344568d46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '760514c290ddae71b299856b11a2d457') in 0.023369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 72.968062 seconds.
+  path: Assets/Brana/modeli/prefabi/korpica.prefab
+  artifactKey: Guid(f9e277f2eda33c944b4f9ea41bd777eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/korpica.prefab using Guid(f9e277f2eda33c944b4f9ea41bd777eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44651c05b88903463db93b6454410204') in 0.013207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001345 seconds.
+  path: Assets/Brana/modeli/prefabi/korpica ispecena.prefab
+  artifactKey: Guid(eecc614ab5c97ee478b3d9d3149699bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/korpica ispecena.prefab using Guid(eecc614ab5c97ee478b3d9d3149699bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ea5d42a955dddbd01407d0bcda771a') in 0.015086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Brana/modeli/prefabi/korpica sa filom.prefab
+  artifactKey: Guid(f21a874b977e3c44385f4e0a3c876364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/korpica sa filom.prefab using Guid(f21a874b977e3c44385f4e0a3c876364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '993bb5a57b3471e198e8753dd6f682a3') in 0.014385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 90.004075 seconds.
+  path: Assets/Brana/modeli/prefabi/materijali
+  artifactKey: Guid(202b41bac11659b4ea3c426e91703cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/materijali using Guid(202b41bac11659b4ea3c426e91703cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8fbd8eeb45a97282cb4a8c7e2efd8ca') in 0.008312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.080259 seconds.
+  path: Assets/Brana/modeli/prefabi/materijali/baby roza.mat
+  artifactKey: Guid(eda5b10c71a05e649a258c3bd59c595a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/materijali/baby roza.mat using Guid(eda5b10c71a05e649a258c3bd59c595a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '760a44f25ca03e7242d8e466629edf54') in 0.019716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Brana/modeli/prefabi/materijali/svetla plava.mat
+  artifactKey: Guid(6cfe6c74a3857b14a94d4ec665b9556c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/materijali/svetla plava.mat using Guid(6cfe6c74a3857b14a94d4ec665b9556c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5abfb249b35c9399b2419def69cc432') in 0.024575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Brana/modeli/prefabi/materijali/siva.mat
+  artifactKey: Guid(f1a9c0b1ee4d8dd4da4a5e4de3f3e063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/materijali/siva.mat using Guid(f1a9c0b1ee4d8dd4da4a5e4de3f3e063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31bafa8c83fdb31ec27c564aa786e014') in 0.017051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Brana/modeli/prefabi/materijali/svetlo plava.mat
+  artifactKey: Guid(f8c5982226ca2e047a3ddcc788cfa5f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/materijali/svetlo plava.mat using Guid(f8c5982226ca2e047a3ddcc788cfa5f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f563d8306c01111af89d0b5d0c05605c') in 0.017986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Brana/modeli/prefabi/materijali/plava.mat
+  artifactKey: Guid(c2ea2de766b527c4d953bb9b5187039c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/materijali/plava.mat using Guid(c2ea2de766b527c4d953bb9b5187039c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4260a1bd65c32daa9cf2bf4f62ecafd') in 0.014171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Brana/modeli/prefabi/materijali/zuta.mat
+  artifactKey: Guid(02704607273fea24887fe1f539a9190f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/materijali/zuta.mat using Guid(02704607273fea24887fe1f539a9190f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d69bb21a031ba3b545db95f67b3aea7') in 0.017541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Brana/modeli/prefabi/materijali/crvenasvetla.mat
+  artifactKey: Guid(e0fd0e3faade1d0498cd6b73e5d34364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/materijali/crvenasvetla.mat using Guid(e0fd0e3faade1d0498cd6b73e5d34364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6119c7823dc9a95efd23cba05a8959a7') in 0.018689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Brana/modeli/prefabi/materijali/tamno siva.mat
+  artifactKey: Guid(738c8a2264877a1469612c04b9d39bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/materijali/tamno siva.mat using Guid(738c8a2264877a1469612c04b9d39bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f4d537eaa560e260afa3f4c365f44ae') in 0.021568 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

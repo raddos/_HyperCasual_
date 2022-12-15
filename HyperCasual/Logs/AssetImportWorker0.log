@@ -209,3 +209,7 @@ Received Import Request.
   path: Assets/Brana/modeli/prefabi/rerna.prefab
   artifactKey: Guid(23dcd6c4c596a9a4297d3306a2553484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Brana/modeli/prefabi/rerna.prefab using Guid(23dcd6c4c596a9a4297d3306a2553484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc983bec1c1006cc5f8f7858cc429f2b') in 0.035473 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
