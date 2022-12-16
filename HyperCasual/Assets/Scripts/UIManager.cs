@@ -60,6 +60,8 @@ public class UIManager : MonoBehaviour
             _buttonPressSource.Play();
             ButtonAnimators[0].SetBool("pressed", true);
             pressed = false;
+             ButtonAnimators[0].SetBool("pressed", false);
+    
         if (score >= trackSpeedUpgrade)
         {
             DecreasScore(trackSpeedUpgrade);
@@ -80,6 +82,8 @@ public class UIManager : MonoBehaviour
         pressed = true;
         ButtonAnimators[2].SetBool("pressed", true);
         pressed = false;
+
+        ButtonAnimators[2].SetBool("pressed", false);
     }
     public void UnitTwoUpdate()
     {

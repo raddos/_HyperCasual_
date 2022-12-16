@@ -10,7 +10,7 @@ using static UnityEngine.GraphicsBuffer;
 public class MufinController: MonoBehaviour
 {
     Vector3 _transform_target;
-    public float _speed = 1f;
+    public float _speed = 5f;
     public float _timePouseOnTrack = 2f;
     private bool isWaiting = false;
 
@@ -21,12 +21,18 @@ public class MufinController: MonoBehaviour
 
     GameObject[] mesh_list;
 
+
+    [SerializeField] public Upgrades upg;
+
+
     int position_counter = 1;
     int mesh_num = 0;
     int random_number;
 
     private void Awake()
     {
+        _speed = Upgrades.track_speed;
+        upg=GetComponent<Upgrades>();
         random_number = UnityEngine.Random.Range(0, 5);
         mesh_list = _muffin.returnMuffinChildren(random_number);
         muffin = _muffin.returnMuffin(random_number);
@@ -48,15 +54,19 @@ public class MufinController: MonoBehaviour
         mesh_num++;
     }
 
-    //Game loop -> to GameManager
     private void Update()
     {
+
+
+        //Update speed 
         if (UIManager.Instance.isTrackSpeedUpdated)
         {
-            _speed *=500;
+            upg.UpdateTrackSpeed(10);
+
             UIManager.Instance.isTrackSpeedUpdated = false;
         }
 
+        //Muffin movement
         if (!isWaiting)
         {
             if (transform.position.x <= _transform_target.x)

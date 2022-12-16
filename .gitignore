@@ -4,11 +4,11 @@
 #
 */[Ll]ibrary/
 */[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
+*/[Oo]bj/
+*/[Bb]uild/
+*/[Bb]uilds/
 */[Ll]ogs/
-/[Mm]emoryCaptures/
+*/[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -59,3 +59,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 *.log
+HyperCasual/Logs/shadercompiler-UnityShaderCompiler.exe0.log
+HyperCasual/Logs/AssetImportWorker1-prev.log
+HyperCasual/Logs/AssetImportWorker0-prev.log
+HyperCasual/Assets/Models/korpica.fbx.meta
