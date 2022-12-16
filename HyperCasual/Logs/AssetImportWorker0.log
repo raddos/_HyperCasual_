@@ -303,3 +303,61 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7501.769738 seconds.
+  path: Assets/Brana/modeli/zid staklo.fbx
+  artifactKey: Guid(fe8b9966f69f854469b50ad2d9b0a5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/zid staklo.fbx using Guid(fe8b9966f69f854469b50ad2d9b0a5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54dcc13eec1df12043753e78b9a5b9a7') in 1.828183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2151.896663 seconds.
+  path: Assets/Brana/modeli/prefabi/materijali/staklo.mat
+  artifactKey: Guid(9c54b03266167f94abbec5b3ee0c2f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/materijali/staklo.mat using Guid(9c54b03266167f94abbec5b3ee0c2f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7d9f65db4acc5889be44aaf5d4f4334') in 0.712707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 359.944765 seconds.
+  path: Assets/Brana/modeli/prefabi/materijali/prozor.mat
+  artifactKey: Guid(21217f4fe3ee65d439ecdde42ccfb05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/materijali/prozor.mat using Guid(21217f4fe3ee65d439ecdde42ccfb05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b11df8c1d568ea76ca752feb5c7cf95') in 0.023373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 67.241796 seconds.
+  path: Assets/Brana/modeli/prefabi/zid staklo.prefab
+  artifactKey: Guid(4801fd39d2648d243ab799f18ebd878f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/zid staklo.prefab using Guid(4801fd39d2648d243ab799f18ebd878f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ea24803c26e7e5e1c7d1c1a0fbc06d5') in 0.030513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 85.656968 seconds.
+  path: Assets/Brana/modeli/prefabi/zid fbx.prefab
+  artifactKey: Guid(8469f82751efdce4e94a8903e9104523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/zid fbx.prefab using Guid(8469f82751efdce4e94a8903e9104523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2851125a6580e314c32c62ecaf13d55') in 0.021411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Brana/modeli/prefabi/zid staklo.prefab
+  artifactKey: Guid(4801fd39d2648d243ab799f18ebd878f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/zid staklo.prefab using Guid(4801fd39d2648d243ab799f18ebd878f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7c72372741ad8ba86cfbfc43943ca17') in 0.021406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 524.188154 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX Prefabs/Smoke/CFX_SmokePuffs+Text.prefab
+  artifactKey: Guid(db5c3efbba2f1b7419632d7966b542f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX Prefabs/Smoke/CFX_SmokePuffs+Text.prefab using Guid(db5c3efbba2f1b7419632d7966b542f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '840ba7d6f325b26923c5bbfa05a537fe') in 0.229721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX Prefabs/Smoke/CFX_SmokePuffs.prefab
+  artifactKey: Guid(754a7a7c55ee2ce4493a0e4079785280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX Prefabs/Smoke/CFX_SmokePuffs.prefab using Guid(754a7a7c55ee2ce4493a0e4079785280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abdac22db5161114212688fbd8f4b79d') in 0.029662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX Prefabs/Smoke/CFX_SmokePuffsAlt.prefab
+  artifactKey: Guid(9670926e073251b4d9e7cc13c294ea9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX Prefabs/Smoke/CFX_SmokePuffsAlt.prefab using Guid(9670926e073251b4d9e7cc13c294ea9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8987a8d0e91740b19c26b5597184a0f5') in 0.055313 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
