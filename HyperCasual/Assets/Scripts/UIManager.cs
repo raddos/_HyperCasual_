@@ -23,13 +23,73 @@ public class UIManager : MonoBehaviour
     public TMP_Text _score;
     //ScoreCheck
     int money_per_cookie_base = 10;
+    public Animator[] ButtonAnimators;
+    private bool pressed = false;
+    AudioSource _buttonPressSource;
 
-    //--- Debug Panel
+    //TrackSpeedUpgrade
+    int trackSpeedUpgrade = 20;
+    public TMP_Text _trackSpeedText;
+    public bool isTrackSpeedUpdated = false;
+
 
     private void Awake()
     {
         Instance= this;
+        _buttonPressSource= GetComponent<AudioSource>();
     }
+
+
+    public void IncreaseScore()
+    {
+        score += money_per_cookie_base;
+        _score.text = score.ToString();
+    }
+
+    public void DecreasScore(int upgradeCost)
+    {
+        score -= upgradeCost;
+        _score.text = score.ToString();
+    }
+
+    #region GamePanel
+
+    public void TrackSpeedUpdate()
+    {
+            pressed = true;
+            _buttonPressSource.Play();
+            ButtonAnimators[0].SetBool("pressed", true);
+            pressed = false;
+        if (score >= trackSpeedUpgrade)
+        {
+            DecreasScore(trackSpeedUpgrade);
+            trackSpeedUpgrade += 15;
+            _trackSpeedText.text = trackSpeedUpgrade.ToString();
+            isTrackSpeedUpdated = true;
+        }
+    }
+    public void SpawnTimeUpdate()
+    {
+        pressed = true;
+        _buttonPressSource.Play();
+        ButtonAnimators[1].SetBool("pressed", true);
+        pressed = false;
+    }
+    public void UnitOneUpdate()
+    {
+        pressed = true;
+        ButtonAnimators[2].SetBool("pressed", true);
+        pressed = false;
+    }
+    public void UnitTwoUpdate()
+    {
+        pressed = true;
+        ButtonAnimators[3].SetBool("pressed", true);
+        pressed = false;
+    }
+    #endregion
+
+    #region DebugMenuButtonOptions
 
     public void OnClick()
     {
@@ -38,18 +98,11 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-
     public void Resume()
     {
         PanelSwitch();
         //Unfreeze
         Time.timeScale = 1f;
-    }
-
-    public void Score()
-    {
-        score += money_per_cookie_base;
-        _score.text = score.ToString();
     }
 
     public void SwitchCamera()
@@ -64,7 +117,6 @@ public class UIManager : MonoBehaviour
             camera_switch= false;
         _cameraAnimator.SetBool("switch", camera_switch);
     }
-
 
     private void PanelSwitch()
     {
@@ -81,4 +133,6 @@ public class UIManager : MonoBehaviour
             _gamePanel.SetActive(!isActive);
         }
     }
+
+#endregion
 }

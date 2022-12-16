@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using static UnityEngine.GraphicsBuffer;
 
 public class MufinController: MonoBehaviour
@@ -12,23 +13,50 @@ public class MufinController: MonoBehaviour
     public float _speed = 1f;
     public float _timePouseOnTrack = 2f;
     private bool isWaiting = false;
-    GameObject _gameObject;
-
 
     [SerializeField] public float [] x_positons;
+    
+    [SerializeField] Muffin _muffin;
+    private GameObject muffin;
+
+    GameObject[] mesh_list;
 
     int position_counter = 1;
-    private void Start()
+    int mesh_num = 0;
+    int random_number;
+
+    private void Awake()
     {
-        //Start - > transition to postion;
-        //Animator to do 
-        _transform_target.x = x_positons[position_counter];
-        _gameObject = this.gameObject;
-        position_counter++;
+        random_number = UnityEngine.Random.Range(0, 5);
+        mesh_list = _muffin.returnMuffinChildren(random_number);
+        muffin = _muffin.returnMuffin(random_number);
+
+
+        //Check track number
+        //if more then 2 add meus
     }
 
+    private void Start()
+    {
+        _transform_target.x = x_positons[position_counter];
+        //Start - > transition to postion;
+        //Animator to do 
+        muffin.SetActive(true);
+        mesh_list[mesh_num].SetActive(true);
+           
+        position_counter++;
+        mesh_num++;
+    }
+
+    //Game loop -> to GameManager
     private void Update()
     {
+        if (UIManager.Instance.isTrackSpeedUpdated)
+        {
+            _speed *=500;
+            UIManager.Instance.isTrackSpeedUpdated = false;
+        }
+
         if (!isWaiting)
         {
             if (transform.position.x <= _transform_target.x)
@@ -38,7 +66,7 @@ public class MufinController: MonoBehaviour
             }
             else
             {
-                if (position_counter <= 7)
+                if (position_counter <= 5)
                     StartCoroutine(Wait());
                 else
                     StartCoroutine(End());
@@ -47,34 +75,58 @@ public class MufinController: MonoBehaviour
         }
     }
 
+    
+    
     IEnumerator Wait()
     {
-        isWaiting = true; 
-        print("Start to wait");  
-       _transform_target.x = x_positons[position_counter];
+        isWaiting = true;
+        //print("Start to wait");  
+        _transform_target.x = x_positons[position_counter];
         //Can add specific sounds on different stations here
 
+
+        if (mesh_num < mesh_list.Length )
+        {
+        mesh_list[mesh_num].SetActive(true);
+        mesh_num++;
+         }   
         position_counter++;
         yield return new WaitForSeconds(_timePouseOnTrack); 
-        print("Wait complete");
+        //print("Wait complete");
         isWaiting = false;
     }
 
     IEnumerator End()
     {
-        if (position_counter >= 7)
+        if (position_counter >= 5)
         {
             //Animation
             
             //Add music
             
             //Add to hud score/money
-            UIManager.Instance.Score();
+            UIManager.Instance.IncreaseScore();
             //Destory
             Destroy(gameObject);
 
         }
         yield return null;
     }
+
+
+
+    public void SetMuffinNumber()
+    {
+        //Transfrom target - > positions
+        
+
+    }
+
+
+
+
+
+
+
 
 }
