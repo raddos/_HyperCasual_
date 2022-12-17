@@ -1,25 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Track : MonoBehaviour
 {
     [SerializeField] public GameObject[] _tracks;
 
-    //this numbers goes to -> muffin controller
-    private int random_number;
+    public int numberOfUpgrade = 0;
+    public int numberAddedTracks = 0;
 
-    private void Awake()
-    {
-        random_number=Random.Range(0, _tracks.Length); 
-    }
+    public GameObject track;
+    private float track_seperation = 0f;
+
+    public bool isUpgraded = false;
     void Start()
     {
-        _tracks[random_number].SetActive(true);
+        track_seperation = 5f;
+        _tracks[numberOfUpgrade].SetActive(true);
     }
 
-    public int GetTrackNumber()
+   public void AddTrack()
     {
-        return random_number;
+        Instantiate(track, new Vector3(track.transform.position.x, track.transform.position.y, track.transform.position.z + track_seperation), Quaternion.identity);
+        track_seperation += 5f;
+    }
+
+    public void UpdateIndex()
+    {
+        GameObject[] alltracks = GameObject.FindGameObjectsWithTag("track");
+
+        foreach (GameObject track in alltracks) 
+        {
+            track.transform.GetChild(numberOfUpgrade).gameObject.SetActive(false);
+        }
+
     }
 }

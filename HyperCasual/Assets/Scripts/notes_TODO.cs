@@ -52,10 +52,36 @@ public class notes_TODO : MonoBehaviour
 
 
 
-    //to be done 12.16
-    //wrapping up game
-    //refactureing and optimasing code (Moving Spawner to GameManager)
-    //additinal pragmatic tehnicall aspecs ( patterns, SOLID p
+    //16.12.
+    //Fixed anchor with windows
+    //Added 2 new buttons
+    //Add track functinality 
+    //Scene hiararhcy updated
+
+
+    //TODO: 
+    //ADD TRACKS OPTION:
+    //Muffin spawner->make initilize every spawn position for future muffins ( for track 2 and track 3 -> z++ )
+    //Update script if occupied for those possitions for spawining
+    //Start method -> same with Spawn positions ( put delay differently for other tracks 
+    //UPGRADE TRACKS-> 
+    //take all obbjects of tag track -> current one set false and new one ( when button is pressed ) set true
+    //Take all mufin controllers -> make new prefab under one for double mupfins, better score
+    //Muffin controller takes-> muffin as []
+    //Track Upgrade2 - > Muffin 1 -0.5 z Mufin 2 0.5 z
+    //Track Upgrade3 -> Muffin 1 -0.8 Mufin 2  0 z Mufin +0.8
+
+    //17.12
+    //Done core mehanics
+    //TODO:
+    //Setting up barriers and seting up UI prices with scores 
+    //Setting up buttons(3 more buttons with options)
+    //Setting up button souds
+    //Setting up normal button animatiosn
+    //Setting up prefab instancing ( particle effects on ending and beggiing ) prefarable on every station
+    //Adding music
+     
+
 }
 
 

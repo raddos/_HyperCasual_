@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO.IsolatedStorage;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.XR;
 using static UnityEngine.GraphicsBuffer;
 
 public class MufinController: MonoBehaviour
@@ -16,40 +18,124 @@ public class MufinController: MonoBehaviour
 
     [SerializeField] public float [] x_positons;
     
+   
+    private Track track;
+    private GameObject trackGameObject;
+
+    //First muffin
     [SerializeField] Muffin _muffin;
     private GameObject muffin;
-
     GameObject[] mesh_list;
 
 
-    [SerializeField] public Upgrades upg;
+
+    //Second muffin
+    [SerializeField] Muffin _muffin_copy;
+    GameObject[] mesh_list_copy;
+    GameObject muffin_copy;
 
 
+    //Third muffin
+    [SerializeField] Muffin _muffin_copy2;
+    GameObject[] mesh_list_copy2;
+    GameObject muffin_copy2;
+
+
+     [SerializeField] public Upgrades upg;
+    
+
+
+    private bool isFristUpgradeInstance = false;
+    private bool isSecondUpgradeInstance = false;
     int position_counter = 1;
     int mesh_num = 0;
     int random_number;
+    int random_number2;
+    int random_number3;
 
     private void Awake()
     {
+        //Upgrade 
         _speed = Upgrades.track_speed;
-        upg=GetComponent<Upgrades>();
-        random_number = UnityEngine.Random.Range(0, 5);
+         upg=GetComponent<Upgrades>();
+
+        //Track
+        trackGameObject = GameObject.FindGameObjectWithTag("Track");
+        track = trackGameObject.GetComponent<Track>();
+
+
+        //First muffin
+        random_number = UnityEngine.Random.Range(0,5);
         mesh_list = _muffin.returnMuffinChildren(random_number);
         muffin = _muffin.returnMuffin(random_number);
 
 
-        //Check track number
-        //if more then 2 add meus
+        //SecondMuffin
+        if (track.numberOfUpgrade > 0)
+        {
+            random_number2 = UnityEngine.Random.Range(0, 5);
+            mesh_list_copy = _muffin_copy.returnMuffinChildren(random_number2);
+            muffin_copy = _muffin_copy.returnMuffin(random_number2);
+            isFristUpgradeInstance = true;
+
+        }
+
+        //ThirdMuffin
+        if (track.numberOfUpgrade > 1)
+        {
+            random_number3 = UnityEngine.Random.Range(0, 5);
+            mesh_list_copy2 = _muffin_copy2.returnMuffinChildren(random_number3);
+            muffin_copy2 = _muffin_copy2.returnMuffin(random_number3);
+            isSecondUpgradeInstance = true;
+
+        }
+
+
     }
 
     private void Start()
     {
+        
         _transform_target.x = x_positons[position_counter];
-        //Start - > transition to postion;
-        //Animator to do 
-        muffin.SetActive(true);
-        mesh_list[mesh_num].SetActive(true);
-           
+      
+
+        if(!isFristUpgradeInstance )
+        {
+            muffin.SetActive(true);
+            mesh_list[mesh_num].SetActive(true);
+        }
+
+        if (track.numberOfUpgrade==1 && isFristUpgradeInstance)
+         {
+            muffin.SetActive(true);
+            muffin_copy.SetActive(true);
+
+            mesh_list[mesh_num].SetActive(true);
+            mesh_list_copy[mesh_num].SetActive(true);
+
+            mesh_list_copy[mesh_num].transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + 1f);
+            mesh_list[mesh_num].transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z - 1f);
+
+        }
+        
+        if(track.numberOfUpgrade== 2 && isSecondUpgradeInstance)
+        {
+            muffin.SetActive(true);
+            muffin_copy.SetActive(true);
+            muffin_copy2.SetActive(true);
+
+            mesh_list[mesh_num].SetActive(true);
+            mesh_list_copy[mesh_num].SetActive(true);
+            mesh_list_copy2[mesh_num].SetActive(true);
+
+            mesh_list[mesh_num].transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z - 1f);
+            mesh_list_copy[mesh_num].transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + 1f);
+            mesh_list_copy2[mesh_num].transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+
+
+        }
+        
+
         position_counter++;
         mesh_num++;
     }
@@ -72,7 +158,7 @@ public class MufinController: MonoBehaviour
             if (transform.position.x <= _transform_target.x)
             { 
                 //Vector based     
-                transform.position = new Vector3(this.transform.position.x + 0.1f*_speed, this.transform.position.y, this.transform.position.z);
+                    transform.position = new Vector3(this.transform.position.x + 0.1f*_speed, this.transform.position.y, this.transform.position.z);
             }
             else
             {
@@ -97,9 +183,39 @@ public class MufinController: MonoBehaviour
 
         if (mesh_num < mesh_list.Length )
         {
-        mesh_list[mesh_num].SetActive(true);
-        mesh_num++;
-         }   
+
+            if (!isFristUpgradeInstance)
+            {
+                mesh_list[mesh_num].SetActive(true);
+            }
+
+            if (track.numberOfUpgrade == 1 && isFristUpgradeInstance)
+            {
+                mesh_list[mesh_num].transform.position= new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z - 1f);
+                mesh_list[mesh_num].SetActive(true);
+
+                mesh_list_copy[mesh_num].transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + 1f);
+                mesh_list_copy[mesh_num].SetActive(true);
+           
+            }
+
+            if(track.numberOfUpgrade == 2 && isSecondUpgradeInstance)
+            {
+                mesh_list[mesh_num].transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z - 1f);
+                mesh_list[mesh_num].SetActive(true);
+
+                mesh_list_copy[mesh_num].transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + 1f);
+                mesh_list_copy[mesh_num].SetActive(true);
+
+                mesh_list_copy2[mesh_num].transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                mesh_list_copy2[mesh_num].SetActive(true);
+            }
+            
+
+            mesh_num++;
+         }
+
+
         position_counter++;
         yield return new WaitForSeconds(_timePouseOnTrack); 
         //print("Wait complete");
@@ -114,8 +230,24 @@ public class MufinController: MonoBehaviour
             
             //Add music
             
+
+
+
+
             //Add to hud score/money
             UIManager.Instance.IncreaseScore();
+
+            if (track.numberOfUpgrade>0 && isFristUpgradeInstance)
+            {
+                UIManager.Instance.IncreaseScore();
+            }
+
+            if(track.numberOfUpgrade>1 && isSecondUpgradeInstance)
+            {
+                UIManager.Instance.IncreaseScore();
+            }
+            
+            
             //Destory
             Destroy(gameObject);
 
@@ -123,20 +255,13 @@ public class MufinController: MonoBehaviour
         yield return null;
     }
 
-
-
-    public void SetMuffinNumber()
-    {
-        //Transfrom target - > positions
-        
-
-    }
-
-
-
-
-
-
+    //IF UPGRADE NUMBER ==1 
+    //Copy muffin to prefab
+    //Get all that muffin meshes.
+    //Every Position mesh of another one activate.
+    //Destroy(gameObject) 
+    //if(upgrade) destory coppy too
+    //UI update Money per cookie 20
 
 
 }

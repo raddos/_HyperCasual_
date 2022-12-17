@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+//using UnityEngine.UIElements;
 using TMPro;
 using UnityEngine.SocialPlatforms.Impl;
 using Unity.VisualScripting;
+using System;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -25,18 +27,20 @@ public class UIManager : MonoBehaviour
     int money_per_cookie_base = 10;
     public Animator[] ButtonAnimators;
     private bool pressed = false;
-    AudioSource _buttonPressSource;
+    AudioSource _buttonPressAudioSource;
 
     //TrackSpeedUpgrade
     int trackSpeedUpgrade = 20;
     public TMP_Text _trackSpeedText;
     public bool isTrackSpeedUpdated = false;
 
+    public Button addTrackButton;
+    public Track tracks;
 
     private void Awake()
     {
         Instance= this;
-        _buttonPressSource= GetComponent<AudioSource>();
+        _buttonPressAudioSource = GetComponent<AudioSource>();   
     }
 
 
@@ -57,7 +61,7 @@ public class UIManager : MonoBehaviour
     public void TrackSpeedUpdate()
     {
             pressed = true;
-            _buttonPressSource.Play();
+        _buttonPressAudioSource.Play();
             ButtonAnimators[0].SetBool("pressed", true);
             pressed = false;
              ButtonAnimators[0].SetBool("pressed", false);
@@ -70,14 +74,16 @@ public class UIManager : MonoBehaviour
             isTrackSpeedUpdated = true;
         }
     }
+
     public void SpawnTimeUpdate()
     {
         pressed = true;
-        _buttonPressSource.Play();
+        _buttonPressAudioSource.Play();
         ButtonAnimators[1].SetBool("pressed", true);
         pressed = false;
     }
-    public void UnitOneUpdate()
+
+    public void UnitUpdate()
     {
         pressed = true;
         ButtonAnimators[2].SetBool("pressed", true);
@@ -85,12 +91,31 @@ public class UIManager : MonoBehaviour
 
         ButtonAnimators[2].SetBool("pressed", false);
     }
-    public void UnitTwoUpdate()
+
+    public void WaitingTimeUpdate()
     {
         pressed = true;
         ButtonAnimators[3].SetBool("pressed", true);
         pressed = false;
     }
+
+    public void AddTrack()
+    {
+
+        if (tracks.numberAddedTracks < 4)
+        {
+            _buttonPressAudioSource.Play();
+            tracks.numberAddedTracks++;
+            tracks.AddTrack();
+        }
+        else
+            addTrackButton.interactable = false;
+    }
+    public void UpgradeTrack()
+    {
+        tracks.numberOfUpgrade++;
+    }
+
     #endregion
 
     #region DebugMenuButtonOptions
