@@ -13,7 +13,7 @@ public class MufinController: MonoBehaviour
 {
     Vector3 _transform_target;
     public float _speed = 5f;
-    public float _timePouseOnTrack = 2f;
+    public float _waitingTime = 2f;
     private bool isWaiting = false;
 
     [SerializeField] public float [] x_positons;
@@ -41,24 +41,32 @@ public class MufinController: MonoBehaviour
     GameObject muffin_copy2;
 
 
-     [SerializeField] public Upgrades upg;
-    
+    [SerializeField] public Upgrades upg;
+
+
+    //first is Swoosh
+    //second cash_sound
+    public AudioClip[] sounds;
+
+    public GameObject[] muffinUpgradeParticles;
+    public GameObject[] muffinEndParticles;
 
 
     private bool isFristUpgradeInstance = false;
     private bool isSecondUpgradeInstance = false;
     int position_counter = 1;
     int mesh_num = 0;
-    int random_number;
-    int random_number2;
-    int random_number3;
+    public int random_number;
+    public int random_number2;
+    public int random_number3;
 
     private void Awake()
     {
+     
+         upg=GetComponent<Upgrades>();
         //Upgrade 
         _speed = Upgrades.track_speed;
-         upg=GetComponent<Upgrades>();
-
+        _waitingTime = Upgrades.waiting_time;
         //Track
         trackGameObject = GameObject.FindGameObjectWithTag("Track");
         track = trackGameObject.GetComponent<Track>();
@@ -147,9 +155,19 @@ public class MufinController: MonoBehaviour
         //Update speed 
         if (UIManager.Instance.isTrackSpeedUpdated)
         {
-            upg.UpdateTrackSpeed(10);
+            upg = GameObject.FindGameObjectWithTag("Upgrade").GetComponent<Upgrades>() ;
+            upg.UpdateTrackSpeed(0.1f);
 
             UIManager.Instance.isTrackSpeedUpdated = false;
+        }
+
+        //Update Waiting time
+        if (UIManager.Instance.isWaitinTimePriceUpdate)
+        {
+            upg = GameObject.FindGameObjectWithTag("Upgrade").GetComponent<Upgrades>();
+            upg.UpdateWaitingTime(0.08f);
+
+            UIManager.Instance.isWaitinTimePriceUpdate = false;
         }
 
         //Muffin movement
@@ -159,9 +177,13 @@ public class MufinController: MonoBehaviour
             { 
                 //Vector based     
                     transform.position = new Vector3(this.transform.position.x + 0.1f*_speed, this.transform.position.y, this.transform.position.z);
+                //Sound on movement
+               
+                
             }
             else
             {
+                Debug.Log(_waitingTime);
                 if (position_counter <= 5)
                     StartCoroutine(Wait());
                 else
@@ -217,28 +239,34 @@ public class MufinController: MonoBehaviour
 
 
         position_counter++;
-        yield return new WaitForSeconds(_timePouseOnTrack); 
+        yield return new WaitForSeconds(_waitingTime);
+         AudioSource.PlayClipAtPoint(sounds[0],new Vector3(_transform_target.x, _transform_target.y, _transform_target.z));
         //print("Wait complete");
         isWaiting = false;
     }
 
     IEnumerator End()
     {
+        
+
+
         if (position_counter >= 5)
         {
             //Animation
-            
+
             //Add music
-            
+            AudioSource.PlayClipAtPoint(sounds[1], new Vector3(_transform_target.x, this.transform.position.y, this.transform.position.y));
 
 
 
 
             //Add to hud score/money
+            //Money once
             UIManager.Instance.IncreaseScore();
 
             if (track.numberOfUpgrade>0 && isFristUpgradeInstance)
             {
+                //Money twice with incramented money
                 UIManager.Instance.IncreaseScore();
             }
 

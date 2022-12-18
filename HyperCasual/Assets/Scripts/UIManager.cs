@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
 {
 
     public static UIManager Instance;
-    public static int score = 0;
+    public static int score = 10000;
     //Camra anim
     public Animator _cameraAnimator;
     private bool camera_switch = false;
@@ -21,21 +21,52 @@ public class UIManager : MonoBehaviour
     public GameObject _gamePanel;
  
     //--- Game Panel
+
     //Money-Score
     public TMP_Text _score;
+
     //ScoreCheck
     int money_per_cookie_base = 10;
     public Animator[] ButtonAnimators;
     private bool pressed = false;
     AudioSource _buttonPressAudioSource;
 
-    //TrackSpeedUpgrade
+
+    //WaitingTime upgrade
+    public TMP_Text _waitingTimeText;
+    private int waitingTimePrice = 20;
+    public bool isWaitinTimePriceUpdate = false;
+
+
+    //Spawn Time upgrade
+    public TMP_Text _spawnTimeUpgrade;
+    private int SpawnTimeUpgradePrice = 40;
+    public bool isSpawnTimeUpdate = false;
+
+    //TrackSpeedUpgrade functionality
     int trackSpeedUpgrade = 20;
     public TMP_Text _trackSpeedText;
     public bool isTrackSpeedUpdated = false;
+ 
+    //Unit Price Upgrade
+    public TMP_Text _unitUpgradeText;
+    private int unitUpgradePrice = 15;
 
+    //AddTrack functinality
+    public TMP_Text _addtrackText;
     public Button addTrackButton;
     public Track tracks;
+    private int trackAddPrice = 1500;
+
+
+
+    //Track upgrade
+    //variables are in tracks scrip
+    public Button upgradeTrackButton;
+    public Animator upgradeTrackAnimator;
+    public TMP_Text trackUpgradeText;
+    private int trackUpgradePrice = 2000;
+    public AudioSource upgradeTrackSound;
 
     private void Awake()
     {
@@ -43,6 +74,11 @@ public class UIManager : MonoBehaviour
         _buttonPressAudioSource = GetComponent<AudioSource>();   
     }
 
+    private void Start()
+    {
+        //Set all prices to textfields;
+        _score.text = score.ToString();
+    }
 
     public void IncreaseScore()
     {
@@ -55,6 +91,9 @@ public class UIManager : MonoBehaviour
         score -= upgradeCost;
         _score.text = score.ToString();
     }
+
+
+
 
     #region GamePanel
 
@@ -77,43 +116,99 @@ public class UIManager : MonoBehaviour
 
     public void SpawnTimeUpdate()
     {
-        pressed = true;
         _buttonPressAudioSource.Play();
+        pressed = true;  
         ButtonAnimators[1].SetBool("pressed", true);
         pressed = false;
+
+
+        if (score >= SpawnTimeUpgradePrice)
+        {
+            DecreasScore(SpawnTimeUpgradePrice);
+            SpawnTimeUpgradePrice += 15;
+            _spawnTimeUpgrade.text = SpawnTimeUpgradePrice.ToString();
+            isSpawnTimeUpdate = true;
+        }
     }
+
+
+
 
     public void UnitUpdate()
     {
+        _buttonPressAudioSource.Play();
         pressed = true;
         ButtonAnimators[2].SetBool("pressed", true);
         pressed = false;
 
-        ButtonAnimators[2].SetBool("pressed", false);
+        if(score > unitUpgradePrice)
+        {
+            DecreasScore(unitUpgradePrice);
+            money_per_cookie_base += 1;
+            
+            unitUpgradePrice += 100;
+            _unitUpgradeText.text=unitUpgradePrice.ToString();
+           
+        }
+
     }
 
     public void WaitingTimeUpdate()
     {
+        _buttonPressAudioSource.Play();
         pressed = true;
         ButtonAnimators[3].SetBool("pressed", true);
         pressed = false;
+
+        if (score > waitingTimePrice)
+        {
+            DecreasScore(waitingTimePrice);
+            waitingTimePrice += 40;
+            _waitingTimeText.text = waitingTimePrice.ToString();
+            isWaitinTimePriceUpdate = true;
+        }
+
+
     }
+
+
 
     public void AddTrack()
     {
-
-        if (tracks.numberAddedTracks < 4)
+        if (score >= trackAddPrice)
         {
-            _buttonPressAudioSource.Play();
-            tracks.numberAddedTracks++;
-            tracks.AddTrack();
+          
+            DecreasScore(trackAddPrice);
+            trackAddPrice *= 2;
+            _addtrackText.text= trackAddPrice.ToString();
+            if (tracks.numberAddedTracks < 4)
+            {
+                _buttonPressAudioSource.Play();
+                tracks.numberAddedTracks++;
+                tracks.AddTrack();
+            }
+            else
+                addTrackButton.interactable = false;
         }
-        else
-            addTrackButton.interactable = false;
-    }
+        }
     public void UpgradeTrack()
     {
-        tracks.numberOfUpgrade++;
+        if (score >= trackUpgradePrice)
+        {
+          
+            DecreasScore(trackSpeedUpgrade);
+            trackUpgradePrice *= 6;
+            trackUpgradeText.text = trackUpgradePrice.ToString();
+            tracks.numberOfUpgrade++;
+            _buttonPressAudioSource.Play();
+            upgradeTrackSound.Play();
+            if (tracks.numberOfUpgrade == 2)
+            {
+                upgradeTrackButton.interactable = false;
+                upgradeTrackAnimator.enabled = false;
+            }
+        }
+        
     }
 
     #endregion

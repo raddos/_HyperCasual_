@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.15f1 (e8e88683f834) revision 15263878'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'en' Physical Memory: 5996 MB
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 7541 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\Unity\2021.3.15f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.3.15f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/brani/Documents/GitHub/_HyperCasual_/HyperCasual
+C:/Users/Windows10 Home/Documents/GitHub/HyperCasual/_HyperCasual_/HyperCasual
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54881
-Successfully changed project path to: C:/Users/brani/Documents/GitHub/_HyperCasual_/HyperCasual
-C:/Users/brani/Documents/GitHub/_HyperCasual_/HyperCasual
+57534
+Successfully changed project path to: C:/Users/Windows10 Home/Documents/GitHub/HyperCasual/_HyperCasual_/HyperCasual
+C:/Users/Windows10 Home/Documents/GitHub/HyperCasual/_HyperCasual_/HyperCasual
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,111 +47,115 @@ C:/Users/brani/Documents/GitHub/_HyperCasual_/HyperCasual
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [2012] Host "[IP] 26.151.170.2 [Port] 0 [Flags] 2 [Guid] 4058702228 [EditorId] 4058702228 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-0M2PA4S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [20928] Host "[IP] 192.168.0.13 [Port] 0 [Flags] 2 [Guid] 3683945467 [EditorId] 3683945467 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ABKH3ST) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [2012] Host "[IP] 26.151.170.2 [Port] 0 [Flags] 2 [Guid] 4058702228 [EditorId] 4058702228 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-0M2PA4S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [20928] Host "[IP] 192.168.0.13 [Port] 0 [Flags] 2 [Guid] 3683945467 [EditorId] 3683945467 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ABKH3ST) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 118.51 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 134.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.15f1 (e8e88683f834)
-[Subsystems] Discovering subsystems at path D:/Unity/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/brani/Documents/GitHub/_HyperCasual_/HyperCasual/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Windows10 Home/Documents/GitHub/HyperCasual/_HyperCasual_/HyperCasual/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
     Vendor:   NVIDIA
-    VRAM:     3978 MB
-    Driver:   31.0.15.2756
+    VRAM:     3962 MB
+    Driver:   30.0.15.1278
 Initialize mono
-Mono path[0] = 'D:/Unity/2021.3.15f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/Unity/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56992
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003632 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010421 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 113.27 ms, found 3 plugins.
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 130.17 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.718 seconds
+- Completed reload, in  0.734 seconds
 Domain Reload Profiling:
-	ReloadAssembly (718ms)
-		BeginReloadAssembly (105ms)
+	ReloadAssembly (734ms)
+		BeginReloadAssembly (80ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (520ms)
-			LoadAssemblies (104ms)
+		EndReloadAssembly (533ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (127ms)
+			SetupTypeCache (113ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (310ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (336ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (113ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (142ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
+				InitializePlatformSupportModulesInManaged (63ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (130ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (98ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007477 seconds.
+Registered in 0.010155 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brani\Documents\GitHub\_HyperCasual_\HyperCasual\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brani\Documents\GitHub\_HyperCasual_\HyperCasual\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Windows10 Home\Documents\GitHub\HyperCasual\_HyperCasual_\HyperCasual\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Windows10 Home\Documents\GitHub\HyperCasual\_HyperCasual_\HyperCasual\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 118.27 ms, found 3 plugins.
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 134.13 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.709 seconds
+- Completed reload, in  1.595 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1710ms)
-		BeginReloadAssembly (153ms)
+	ReloadAssembly (1597ms)
+		BeginReloadAssembly (224ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (1447ms)
-			LoadAssemblies (207ms)
+			CreateAndSetChildDomain (126ms)
+		EndReloadAssembly (1244ms)
+			LoadAssemblies (106ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (401ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (72ms)
-			SetupLoadedEditorAssemblies (721ms)
+			SetupTypeCache (333ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (692ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (16ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (118ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (405ms)
-				ProcessInitializeOnLoadMethodAttributes (88ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				RefreshPlugins (134ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (318ms)
+				ProcessInitializeOnLoadMethodAttributes (82ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-database is locked
-Failed to delete database file Library/ShaderCache.db
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 5.35 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.33 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5188 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (0.7 MB). Loaded Objects now: 5643.
-Memory consumption went from 206.8 MB to 206.1 MB.
-Total: 6.047100 ms (FindLiveObjects: 0.667000 ms CreateObjectMapping: 0.550700 ms MarkObjects: 4.401700 ms  DeleteObjects: 0.426600 ms)
+Unloading 5186 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (0.8 MB). Loaded Objects now: 5637.
+Memory consumption went from 206.1 MB to 205.3 MB.
+Total: 5.120300 ms (FindLiveObjects: 0.550700 ms CreateObjectMapping: 0.339100 ms MarkObjects: 3.838800 ms  DeleteObjects: 0.390600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -165,204 +169,82 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 134161.535097 seconds.
-  path: Assets/Brana/modeli/prefabi/traka.prefab
-  artifactKey: Guid(affa5959c72e661459de50e35ff1d55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brana/modeli/prefabi/traka.prefab using Guid(affa5959c72e661459de50e35ff1d55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73bb445dcc71a2e56a5678134468a9e6') in 0.294632 seconds 
+  Time since last request: 104861.616636 seconds.
+  path: Assets/prefabi final/partikli
+  artifactKey: Guid(e2c178347e8b5dd49bf76e062fd4a121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/partikli using Guid(e2c178347e8b5dd49bf76e062fd4a121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b488f126261dd4f60e49f03c6dbbf0a') in 0.020255 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Brana/modeli/prefabi/FIL2.prefab
-  artifactKey: Guid(3f1272c0911835e49a25ebd71af6518b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brana/modeli/prefabi/FIL2.prefab using Guid(3f1272c0911835e49a25ebd71af6518b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e5dd0f60cc688c216398f9707f362b7') in 0.031303 seconds 
+  Time since last request: 7.008598 seconds.
+  path: Assets/prefabi final/partikli/end partiklovi
+  artifactKey: Guid(54d0554b085975346aadc889da52b19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/partikli/end partiklovi using Guid(54d0554b085975346aadc889da52b19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd22c302775a02941d1de613c42ecc233') in 0.007736 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Brana/modeli/prefabi/cela traka3.prefab
-  artifactKey: Guid(cc3ad3bd301303c4893fc3d94a00e666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brana/modeli/prefabi/cela traka3.prefab using Guid(cc3ad3bd301303c4893fc3d94a00e666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '799ec9234b3cddf3593fdd5807d89939') in 0.065640 seconds 
+  Time since last request: 0.064160 seconds.
+  path: Assets/prefabi final/partikli/end partiklovi/end crvena.prefab
+  artifactKey: Guid(b530f4f8ed498d54a9052d6f4f63bfdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/partikli/end partiklovi/end crvena.prefab using Guid(b530f4f8ed498d54a9052d6f4f63bfdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a61a77654bf2e5e0fc52abedb36f762') in 0.341677 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Brana/modeli/prefabi/FIL1.prefab
-  artifactKey: Guid(86d8bfebbaac23343b06dc959e067d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brana/modeli/prefabi/FIL1.prefab using Guid(86d8bfebbaac23343b06dc959e067d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2137eb9eeae29f8fff2586ec29a734c1') in 0.031534 seconds 
+  Time since last request: 0.000052 seconds.
+  path: Assets/prefabi final/partikli/end partiklovi/end plava.prefab
+  artifactKey: Guid(2a12f3d9e64651c41bcb2616f300ae4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/partikli/end partiklovi/end plava.prefab using Guid(2a12f3d9e64651c41bcb2616f300ae4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '275d1db94cde5d6932e50868b28edc8e') in 0.114173 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Brana/modeli/prefabi/cela traka2.prefab
-  artifactKey: Guid(8d5ecac7425f3ad41b2b32e566f22f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brana/modeli/prefabi/cela traka2.prefab using Guid(8d5ecac7425f3ad41b2b32e566f22f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fb5912f72493e414dd906b3c5351cb3') in 0.073996 seconds 
+  Time since last request: 6.950316 seconds.
+  path: Assets/prefabi final/Mafin 5/crv.korpica sa filom i visnjom.prefab
+  artifactKey: Guid(3bb2e590ba9a5144297210928253790f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 5/crv.korpica sa filom i visnjom.prefab using Guid(3bb2e590ba9a5144297210928253790f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b02db72262a84d9820dc5fdb2c027e26') in 0.041534 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Brana/modeli/prefabi/cela traka1.prefab
-  artifactKey: Guid(fcf009e95b1a90f4495887533ede7257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brana/modeli/prefabi/cela traka1.prefab using Guid(fcf009e95b1a90f4495887533ede7257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cca3b3c52f1b080b23be5d5bb1b165b') in 0.046052 seconds 
+  Time since last request: 0.000037 seconds.
+  path: Assets/prefabi final/Mafin 5/crvena.korpica sa filom.prefab
+  artifactKey: Guid(7a02fcc8842a69a4aae966f4c874df77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 5/crvena.korpica sa filom.prefab using Guid(7a02fcc8842a69a4aae966f4c874df77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf8a70c1b10b0b24a633653f1b48e1c6') in 0.027042 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.330057 seconds.
-  path: Assets/prefabi final/cela traka2.prefab
-  artifactKey: Guid(b294114cebf11b143ad4db2590368cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/cela traka2.prefab using Guid(b294114cebf11b143ad4db2590368cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ffcea55e63255ca85791be321381d6f') in 0.039326 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 336.173341 seconds.
-  path: Assets/prefabi final/Mafin 1/zel.korpica sa filom i visnjom.prefab
-  artifactKey: Guid(0ce0d8e7503d8934fba75a34f8b0736e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/Mafin 1/zel.korpica sa filom i visnjom.prefab using Guid(0ce0d8e7503d8934fba75a34f8b0736e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44c4de2fe579da3e8f4290c57ac1e769') in 0.031032 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000093 seconds.
-  path: Assets/prefabi final/Mafin 1/zel.korpica sa filom.prefab
-  artifactKey: Guid(8bc88ade0af41104597deb778be2d397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/Mafin 1/zel.korpica sa filom.prefab using Guid(8bc88ade0af41104597deb778be2d397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8995821edc760facea1ced3038f231b8') in 0.028747 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 53.895741 seconds.
-  path: Assets/JMO Assets/Cartoon FX/CFX Prefabs/Smoke/CFX_GasLeak.prefab
-  artifactKey: Guid(ca18ec292c34a8840a49e1e3b2e264ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/CFX Prefabs/Smoke/CFX_GasLeak.prefab using Guid(ca18ec292c34a8840a49e1e3b2e264ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c0226cc2c4cae4feec47158c333394b') in 0.048274 seconds 
+  Time since last request: 0.303968 seconds.
+  path: Assets/prefabi final/Mafin 4/zuta.korpica ispecena.prefab
+  artifactKey: Guid(8953a255b48d9f64daee35d90dec40b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 4/zuta.korpica ispecena.prefab using Guid(8953a255b48d9f64daee35d90dec40b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f74a09880be53e4ef47ed34d87467c') in 0.019399 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000036 seconds.
-  path: Assets/JMO Assets/Cartoon FX/CFX Prefabs (Mobile)/Smoke/Color Variants/CFXM_GasLeak Purple.prefab
-  artifactKey: Guid(6e354b7f8c0846747ba9f500eb9fd971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/CFX Prefabs (Mobile)/Smoke/Color Variants/CFXM_GasLeak Purple.prefab using Guid(6e354b7f8c0846747ba9f500eb9fd971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e7cb038aadd11be6fac0d92475cdba') in 0.034678 seconds 
+  path: Assets/prefabi final/Mafin 4/zuta.korpica sa testom.prefab
+  artifactKey: Guid(7104aa05e9f0892418c92c87b23bda1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 4/zuta.korpica sa testom.prefab using Guid(7104aa05e9f0892418c92c87b23bda1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12b825e9af819d6884562da4f1156e10') in 0.020739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.269680 seconds.
+  path: Assets/prefabi final/Mafin 3/lila.korpica ispecena.prefab
+  artifactKey: Guid(48825fce73299064a9e63e3a6ade636f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 3/lila.korpica ispecena.prefab using Guid(48825fce73299064a9e63e3a6ade636f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b5aabe81e9d8497343b93f9f83f69db') in 0.020942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/prefabi final/Mafin 3/lila.korpica sa filom.prefab
+  artifactKey: Guid(49b11acb41857604eb224da22b4903eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 3/lila.korpica sa filom.prefab using Guid(49b11acb41857604eb224da22b4903eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '368aac29be223c575a0534403602be2c') in 0.021424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.351183 seconds.
+  path: Assets/prefabi final/Mafin 2/plava K.prefab
+  artifactKey: Guid(25dedf209e483204eb37032bd3752bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 2/plava K.prefab using Guid(25dedf209e483204eb37032bd3752bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06ac954be52b1dcb0af1c0e73d602442') in 0.018782 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000035 seconds.
-  path: Assets/Epic Toon FX/Prefabs/Combat/Missiles/Gas/GasMissileGreen.prefab
-  artifactKey: Guid(809b30582ebd3e34a872e06f41d1fb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Epic Toon FX/Prefabs/Combat/Missiles/Gas/GasMissileGreen.prefab using Guid(809b30582ebd3e34a872e06f41d1fb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36cb02b394125a3182101560b4397ee3') in 0.047117 seconds 
+  path: Assets/prefabi final/Mafin 2/plava.korpica sa filom.prefab
+  artifactKey: Guid(1b84d1299f0c87a4ca11c630e8fe3bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 2/plava.korpica sa filom.prefab using Guid(1b84d1299f0c87a4ca11c630e8fe3bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd98a112d6c844e4aa9f46d1157232fcb') in 0.026753 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/Epic Toon FX/Prefabs/Combat/Explosions/MegaExplosion/MegaExplosionPink.prefab
-  artifactKey: Guid(3a42f18a610374a469fdfc06cda3fdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Epic Toon FX/Prefabs/Combat/Explosions/MegaExplosion/MegaExplosionPink.prefab using Guid(3a42f18a610374a469fdfc06cda3fdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58935312513257f98621282639d940f0') in 0.096590 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Epic Toon FX/Prefabs/Combat/Sword/- Legacy/SwordHitLegacy/SwordHitRedLegacy.prefab
-  artifactKey: Guid(6062cf74dd326b146b31d28120ade333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Epic Toon FX/Prefabs/Combat/Sword/- Legacy/SwordHitLegacy/SwordHitRedLegacy.prefab using Guid(6062cf74dd326b146b31d28120ade333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac9c15290c7cebaf257624b5d96cd8d') in 0.053186 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Epic Toon FX/Prefabs/Combat/Explosions/GasExplosion/GasExplosionFire.prefab
-  artifactKey: Guid(89fdb9fee1f1fe94cb02018221255e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Epic Toon FX/Prefabs/Combat/Explosions/GasExplosion/GasExplosionFire.prefab using Guid(89fdb9fee1f1fe94cb02018221255e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '764dc4870b544559269cd9939d3998f0') in 0.057538 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/JMO Assets/Cartoon FX/CFX Prefabs/Smoke/Color Variants/CFX_GasLeak Green.prefab
-  artifactKey: Guid(45ab41383e9d4594ab680d27cc226a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/CFX Prefabs/Smoke/Color Variants/CFX_GasLeak Green.prefab using Guid(45ab41383e9d4594ab680d27cc226a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '062cba3199219c235909d1ec0a5e8831') in 0.025202 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/Epic Toon FX/Demo/Missile Prefabs/Gas/GasGreenOBJ.prefab
-  artifactKey: Guid(0de00afa5e12ea14197cf4a5dd756921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Epic Toon FX/Demo/Missile Prefabs/Gas/GasGreenOBJ.prefab using Guid(0de00afa5e12ea14197cf4a5dd756921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8760280a17407f7c5a984581216e39e9') in 0.038105 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000086 seconds.
-  path: Assets/Epic Toon FX/Prefabs/Combat/Explosions/MegaExplosion/MegaExplosionYellow.prefab
-  artifactKey: Guid(23ffe291646e5a24cb5322ad0784de8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Epic Toon FX/Prefabs/Combat/Explosions/MegaExplosion/MegaExplosionYellow.prefab using Guid(23ffe291646e5a24cb5322ad0784de8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1fdf9e2e3208a99ae342454974594e9') in 0.037789 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Epic Toon FX/Prefabs/Combat/Explosions/MegaExplosion/MegaExplosionBlue.prefab
-  artifactKey: Guid(00f24abfdf0d75142ad604932304d8c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Epic Toon FX/Prefabs/Combat/Explosions/MegaExplosion/MegaExplosionBlue.prefab using Guid(00f24abfdf0d75142ad604932304d8c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '656a2ccf48b6a9c10ac3e1647cd554a7') in 0.036229 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Epic Toon FX/Prefabs/Combat/Explosions/GasExplosion/GasExplosionBlue.prefab
-  artifactKey: Guid(3d9e3e440644d1241849152e3425c62e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Epic Toon FX/Prefabs/Combat/Explosions/GasExplosion/GasExplosionBlue.prefab using Guid(3d9e3e440644d1241849152e3425c62e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc859c080bd768bfdb7718307ca73e1a') in 0.045654 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000113 seconds.
-  path: Assets/Epic Toon FX/Prefabs/Combat/Explosions/GasExplosion/GasExplosionPink.prefab
-  artifactKey: Guid(dd38b45e2135c854d87201aa3d863978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Epic Toon FX/Prefabs/Combat/Explosions/GasExplosion/GasExplosionPink.prefab using Guid(dd38b45e2135c854d87201aa3d863978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c5aefd0fea00ca93357bef2fbc67f37') in 0.045183 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/JMO Assets/Cartoon FX/CFX Prefabs/Smoke/Color Variants/CFX_GasLeak Purple.prefab
-  artifactKey: Guid(b8092493c05d6eb478410fa276d1d848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/CFX Prefabs/Smoke/Color Variants/CFX_GasLeak Purple.prefab using Guid(b8092493c05d6eb478410fa276d1d848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '113677d41abc2d9944a4ea84eb95a145') in 0.036859 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/JMO Assets/Cartoon FX/CFX Prefabs (Mobile)/Smoke/Color Variants/CFXM_GasLeak Green.prefab
-  artifactKey: Guid(e4da1ca80782e754099e427845d964d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/CFX Prefabs (Mobile)/Smoke/Color Variants/CFXM_GasLeak Green.prefab using Guid(e4da1ca80782e754099e427845d964d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99595ad8778b1dd76cecb67aca479f04') in 0.029704 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000087 seconds.
-  path: Assets/Epic Toon FX/Demo/Missile Prefabs/Gas/GasPinkOBJ.prefab
-  artifactKey: Guid(ba18f0508c8fbe54d8b40113b0594df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Epic Toon FX/Demo/Missile Prefabs/Gas/GasPinkOBJ.prefab using Guid(ba18f0508c8fbe54d8b40113b0594df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '853e6dfa97cc5648773eeff0400e0ef6') in 0.032205 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006741 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brani\Documents\GitHub\_HyperCasual_\HyperCasual\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brani\Documents\GitHub\_HyperCasual_\HyperCasual\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 3.15 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.657 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1657ms)
-		BeginReloadAssembly (202ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (72ms)
-		EndReloadAssembly (1356ms)
-			LoadAssemblies (117ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (460ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (71ms)
-			SetupLoadedEditorAssemblies (603ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (109ms)
-				ProcessInitializeOnLoadAttributes (359ms)
-				ProcessInitializeOnLoadMethodAttributes (113ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (19ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.08 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5055 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 29 unused Assets / (0.7 MB). Loaded Objects now: 5700.
-Memory consumption went from 204.9 MB to 204.2 MB.
-Total: 7.999300 ms (FindLiveObjects: 0.636900 ms CreateObjectMapping: 0.514300 ms MarkObjects: 5.707900 ms  DeleteObjects: 1.138500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 0.405535 seconds.
+  path: Assets/prefabi final/Mafin 1/zel.korpica sa filom i visnjom.prefab
+  artifactKey: Guid(4f0a16102a0e6e248b275f122b305f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 1/zel.korpica sa filom i visnjom.prefab using Guid(4f0a16102a0e6e248b275f122b305f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e010e1da6526585b43517d57fb79b0e') in 0.021653 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

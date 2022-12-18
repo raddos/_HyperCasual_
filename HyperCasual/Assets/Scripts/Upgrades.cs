@@ -8,24 +8,31 @@ public class Upgrades:MonoBehaviour
 {
     private GameObject[] trackGameObjects;
 
-    public static float track_speed = 1f;
-
     public Track _track;
 
-    public static float spawn_time = 1f;
 
-    public void UpdateTrackSpeed(int multiplier)
+    public static float track_speed = 1f;
+    public static float spawn_time = 2.5f;
+    public static float waiting_time = 2f;
+
+    public void UpdateTrackSpeed(float multiplier)
     {
-       track_speed *= multiplier;
+            track_speed += multiplier;
     }
 
-    public void UpdateSpawnTime(int number_mult)
+    public void UpdateSpawnTime(float number)
     {
-        spawn_time += number_mult; 
+     //   Debug.Log("begore - " + spawn_time);
+        spawn_time -= number;
+       // Debug.Log("AFter - " + spawn_time);
+
     }
 
-    private void Start()
+    public void UpdateWaitingTime(float number)
     {
+
+       waiting_time-= number;
+
     }
 
     private void Update()

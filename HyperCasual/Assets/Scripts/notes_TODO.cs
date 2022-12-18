@@ -81,7 +81,13 @@ public class notes_TODO : MonoBehaviour
     //Setting up prefab instancing ( particle effects on ending and beggiing ) prefarable on every station
     //Adding music
      
-
+    //18.12 
+    //Added music
+    //Added moving puff sound and money sound
+    //Implemented all buttons and functinality
+    //Prefab spawning
+    //Added UI animations for all buttons
+    //Done finilizing and now fininnesing 
 }
 
 

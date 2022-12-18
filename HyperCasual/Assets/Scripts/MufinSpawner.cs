@@ -8,8 +8,7 @@ using UnityEngine.EventSystems;
 public class MufinSpawner : MonoBehaviour
 {
     [Header("Speed of Spawner")]
-    [SerializeField] public float _speedSpawn = 5f;
-    
+    [SerializeField] public float _speedSpawn;
     //this-> Muffin Controller 
     public GameObject _muffin;
 
@@ -31,7 +30,8 @@ public class MufinSpawner : MonoBehaviour
 
     private bool isSpawning = true;
 
-
+    //button option
+    private Upgrades upg;
     //
     //Vector3 spawn_position_track2 = new (spawn_position_track1.x, spawn_position_track1.y, spawn_position_track1.z + 5f);
 
@@ -39,6 +39,9 @@ public class MufinSpawner : MonoBehaviour
   
     void Start()
     {
+
+        upg = GameObject.FindGameObjectWithTag("Upgrade").GetComponent<Upgrades>();
+        _speedSpawn = Upgrades.spawn_time;
         //1
         spawn_position_track1 = new Vector3(-13, 3.6f, 0);
         second_position_track1 = new Vector3(-9.5f, 3.6f, 0);
@@ -71,9 +74,19 @@ public class MufinSpawner : MonoBehaviour
             //if UI is not over screen
             if (!IsPointerOverUIObject())
             {
+                Debug.Log(_speedSpawn);
                 StartCoroutine(SpawnMuffin()); 
             }
 
+        }
+
+        //Spawn time speed 
+        if (UIManager.Instance.isSpawnTimeUpdate)
+        {
+             upg.UpdateSpawnTime(0.05f);
+            _speedSpawn = Upgrades.spawn_time;
+
+            UIManager.Instance.isSpawnTimeUpdate= false;
         }
     }
 
@@ -97,31 +110,31 @@ public class MufinSpawner : MonoBehaviour
             {
                 //0
                 Instantiate(_muffin, spawn_position_track1, Quaternion.identity);
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(_speedSpawn);
 
             }
 
             if (!isOccupiedTrack2() && _track.numberAddedTracks > 0)
             {
                 Instantiate(_muffin, new Vector3(spawn_position_track2.x, 3.6f, spawn_position_track2.z), Quaternion.identity);
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(_speedSpawn);
             }
             if (!isOccupiedTrack3() && _track.numberAddedTracks > 1)
             {
                 Instantiate(_muffin, new Vector3(spawn_position_track3.x, 3.6f, spawn_position_track3.z), Quaternion.identity);
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(_speedSpawn);
             }
             if (!isOccupiedTrack4() && _track.numberAddedTracks > 2)
             {
                 Instantiate(_muffin, new Vector3(spawn_position_track4.x, 3.6f, spawn_position_track4.z), Quaternion.identity);
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(_speedSpawn);
             }
             if (!isOccupiedTrack5() && _track.numberAddedTracks > 3)
             {
                 Instantiate(_muffin, new Vector3(spawn_position_track5.x, 3.6f, spawn_position_track5.z), Quaternion.identity);
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(_speedSpawn);
             }
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(_speedSpawn);
         }
     }
 
@@ -169,7 +182,7 @@ public class MufinSpawner : MonoBehaviour
             if (!isOccupiedTrack2())
             {
                 Instantiate(_muffin, spawn_position_track2, Quaternion.identity);
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(_speedSpawn);
             }
         }
 
@@ -180,7 +193,7 @@ public class MufinSpawner : MonoBehaviour
             {
 
                 Instantiate(_muffin, spawn_position_track3, Quaternion.identity);
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(_speedSpawn);
             }
         }
 
@@ -191,7 +204,7 @@ public class MufinSpawner : MonoBehaviour
             {
 
                 Instantiate(_muffin, spawn_position_track4, Quaternion.identity);
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(_speedSpawn);
             }
 
         }
