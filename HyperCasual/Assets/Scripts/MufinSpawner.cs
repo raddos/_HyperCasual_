@@ -46,17 +46,17 @@ public class MufinSpawner : MonoBehaviour
         spawn_position_track1 = new Vector3(-13, 3.6f, 0);
         second_position_track1 = new Vector3(-9.5f, 3.6f, 0);
         //2
-        spawn_position_track2= new Vector3(-13, 3.6f, 5f);
-        second_position_track2 = new Vector3(-9.5f, 3.6f, 5f);
+        spawn_position_track2= new Vector3(-13, 3.6f, Track.track_seperation);
+        second_position_track2 = new Vector3(-9.5f, 3.6f, Track.track_seperation);
         //3
-        spawn_position_track3 = new Vector3(-13, 3.6f, 10f);
-        second_position_track3 = new Vector3(-9.5f, 3.6f, 10f);
+        spawn_position_track3 = new Vector3(-13, 3.6f, Track.track_seperation*2);
+        second_position_track3 = new Vector3(-9.5f, 3.6f, Track.track_seperation*2);
         //4
-        spawn_position_track4 = new Vector3(-13, 3.6f, 15f);
-        second_position_track4 = new Vector3(-9.5f, 3.6f, 15f);
+        spawn_position_track4 = new Vector3(-13, 3.6f, Track.track_seperation*3);
+        second_position_track4 = new Vector3(-9.5f, 3.6f, Track.track_seperation*3);
         //5
-        spawn_position_track5 = new Vector3(-13, 3.6f, 20f);
-        second_position_track5 = new Vector3(-9.5f, 3.6f, 20f);
+        spawn_position_track5 = new Vector3(-13, 3.6f, Track.track_seperation*4);
+        second_position_track5 = new Vector3(-9.5f, 3.6f, Track.track_seperation*4);
         _track = GetComponent<Track>();
         //Staring from 5 sec every 5 sec :_speedSpawn;
         //Spawn every 10 seoconds 

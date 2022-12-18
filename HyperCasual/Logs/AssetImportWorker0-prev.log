@@ -15,7 +15,7 @@ C:/Users/Windows10 Home/Documents/GitHub/HyperCasual/_HyperCasual_/HyperCasual
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57534
+51013
 Successfully changed project path to: C:/Users/Windows10 Home/Documents/GitHub/HyperCasual/_HyperCasual_/HyperCasual
 C:/Users/Windows10 Home/Documents/GitHub/HyperCasual/_HyperCasual_/HyperCasual
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/Windows10 Home/Documents/GitHub/HyperCasual/_HyperCasual_/HyperCasual
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [20928] Host "[IP] 192.168.0.13 [Port] 0 [Flags] 2 [Guid] 3683945467 [EditorId] 3683945467 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ABKH3ST) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [4956] Host "[IP] 192.168.0.13 [Port] 0 [Flags] 2 [Guid] 2380129678 [EditorId] 2380129678 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ABKH3ST) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [20928] Host "[IP] 192.168.0.13 [Port] 0 [Flags] 2 [Guid] 3683945467 [EditorId] 3683945467 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ABKH3ST) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [4956] Host "[IP] 192.168.0.13 [Port] 0 [Flags] 2 [Guid] 2380129678 [EditorId] 2380129678 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ABKH3ST) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 134.31 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 177.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.15f1 (e8e88683f834)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
@@ -67,95 +67,95 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010421 seconds.
+Registered in 0.020382 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 130.17 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 142.29 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.734 seconds
+- Completed reload, in  0.914 seconds
 Domain Reload Profiling:
-	ReloadAssembly (734ms)
-		BeginReloadAssembly (80ms)
+	ReloadAssembly (914ms)
+		BeginReloadAssembly (144ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (533ms)
-			LoadAssemblies (78ms)
+		EndReloadAssembly (618ms)
+			LoadAssemblies (141ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (113ms)
+			SetupTypeCache (147ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (336ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (365ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (63ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (130ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (98ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
+				RefreshPlugins (142ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (106ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010155 seconds.
+Registered in 0.010806 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Windows10 Home\Documents\GitHub\HyperCasual\_HyperCasual_\HyperCasual\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Windows10 Home\Documents\GitHub\HyperCasual\_HyperCasual_\HyperCasual\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 134.13 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 146.42 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.595 seconds
+- Completed reload, in  2.232 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1597ms)
-		BeginReloadAssembly (224ms)
+	ReloadAssembly (2233ms)
+		BeginReloadAssembly (290ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (126ms)
-		EndReloadAssembly (1244ms)
-			LoadAssemblies (106ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (333ms)
+			CreateAndSetChildDomain (137ms)
+		EndReloadAssembly (1803ms)
+			LoadAssemblies (213ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (402ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (63ms)
-			SetupLoadedEditorAssemblies (692ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (1086ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
+				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (134ms)
-				BeforeProcessingInitializeOnLoad (131ms)
-				ProcessInitializeOnLoadAttributes (318ms)
-				ProcessInitializeOnLoadMethodAttributes (82ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				RefreshPlugins (147ms)
+				BeforeProcessingInitializeOnLoad (155ms)
+				ProcessInitializeOnLoadAttributes (654ms)
+				ProcessInitializeOnLoadMethodAttributes (102ms)
+				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.33 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 2.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5186 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 38 unused Assets / (0.8 MB). Loaded Objects now: 5637.
-Memory consumption went from 206.1 MB to 205.3 MB.
-Total: 5.120300 ms (FindLiveObjects: 0.550700 ms CreateObjectMapping: 0.339100 ms MarkObjects: 3.838800 ms  DeleteObjects: 0.390600 ms)
+Unloading 5188 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (0.8 MB). Loaded Objects now: 5640.
+Memory consumption went from 206.7 MB to 205.9 MB.
+Total: 5.813500 ms (FindLiveObjects: 0.540400 ms CreateObjectMapping: 0.165700 ms MarkObjects: 4.654500 ms  DeleteObjects: 0.451300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -169,83 +169,187 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 104861.616636 seconds.
-  path: Assets/prefabi final/partikli
-  artifactKey: Guid(e2c178347e8b5dd49bf76e062fd4a121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/partikli using Guid(e2c178347e8b5dd49bf76e062fd4a121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b488f126261dd4f60e49f03c6dbbf0a') in 0.020255 seconds 
+  Time since last request: 182084.162661 seconds.
+  path: Assets/Brana/modeli/prefabi/Mafin 1/zel.korpica ispecena.prefab
+  artifactKey: Guid(739cbe3a8b886934e92bea81e1f5a917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/Mafin 1/zel.korpica ispecena.prefab using Guid(739cbe3a8b886934e92bea81e1f5a917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8b87c5389e49ed7e8c4154c7cb80fb') in 0.330622 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.008598 seconds.
-  path: Assets/prefabi final/partikli/end partiklovi
-  artifactKey: Guid(54d0554b085975346aadc889da52b19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/partikli/end partiklovi using Guid(54d0554b085975346aadc889da52b19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd22c302775a02941d1de613c42ecc233') in 0.007736 seconds 
+  Time since last request: 0.000044 seconds.
+  path: Assets/Brana/modeli/prefabi/FIL3.prefab
+  artifactKey: Guid(4549efe52cb158548bce908ed7cf8a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/FIL3.prefab using Guid(4549efe52cb158548bce908ed7cf8a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd33d877fbb4b1c7dfa322423d607afa5') in 0.021819 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.064160 seconds.
-  path: Assets/prefabi final/partikli/end partiklovi/end crvena.prefab
-  artifactKey: Guid(b530f4f8ed498d54a9052d6f4f63bfdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/partikli/end partiklovi/end crvena.prefab using Guid(b530f4f8ed498d54a9052d6f4f63bfdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a61a77654bf2e5e0fc52abedb36f762') in 0.341677 seconds 
+  Time since last request: 0.000034 seconds.
+  path: Assets/Brana/modeli/prefabi/FIL2.prefab
+  artifactKey: Guid(3f1272c0911835e49a25ebd71af6518b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/FIL2.prefab using Guid(3f1272c0911835e49a25ebd71af6518b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffafea18b0259e0c46c878dada7cbd5c') in 0.029186 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/prefabi final/partikli/end partiklovi/end plava.prefab
-  artifactKey: Guid(2a12f3d9e64651c41bcb2616f300ae4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/partikli/end partiklovi/end plava.prefab using Guid(2a12f3d9e64651c41bcb2616f300ae4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '275d1db94cde5d6932e50868b28edc8e') in 0.114173 seconds 
+  Time since last request: 0.000029 seconds.
+  path: Assets/Brana/modeli/prefabi/Mafin 1/zel.korpica sa filom.prefab
+  artifactKey: Guid(6bbd99f31e3194241acde600cf9513ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/Mafin 1/zel.korpica sa filom.prefab using Guid(6bbd99f31e3194241acde600cf9513ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74a3da69bcfe87c7b3920755bc5d562c') in 0.034342 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.950316 seconds.
-  path: Assets/prefabi final/Mafin 5/crv.korpica sa filom i visnjom.prefab
-  artifactKey: Guid(3bb2e590ba9a5144297210928253790f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/Mafin 5/crv.korpica sa filom i visnjom.prefab using Guid(3bb2e590ba9a5144297210928253790f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b02db72262a84d9820dc5fdb2c027e26') in 0.041534 seconds 
+  Time since last request: 0.000025 seconds.
+  path: Assets/Brana/modeli/prefabi/smesa.prefab
+  artifactKey: Guid(ee973a646e55b274f9488aa5a05b20de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/smesa.prefab using Guid(ee973a646e55b274f9488aa5a05b20de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca923c9511e5c8d52de52a1135b389ca') in 0.019559 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/prefabi final/Mafin 5/crvena.korpica sa filom.prefab
-  artifactKey: Guid(7a02fcc8842a69a4aae966f4c874df77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/Mafin 5/crvena.korpica sa filom.prefab using Guid(7a02fcc8842a69a4aae966f4c874df77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf8a70c1b10b0b24a633653f1b48e1c6') in 0.027042 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.303968 seconds.
-  path: Assets/prefabi final/Mafin 4/zuta.korpica ispecena.prefab
-  artifactKey: Guid(8953a255b48d9f64daee35d90dec40b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/Mafin 4/zuta.korpica ispecena.prefab using Guid(8953a255b48d9f64daee35d90dec40b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f74a09880be53e4ef47ed34d87467c') in 0.019399 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/prefabi final/Mafin 4/zuta.korpica sa testom.prefab
-  artifactKey: Guid(7104aa05e9f0892418c92c87b23bda1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/Mafin 4/zuta.korpica sa testom.prefab using Guid(7104aa05e9f0892418c92c87b23bda1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12b825e9af819d6884562da4f1156e10') in 0.020739 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.269680 seconds.
-  path: Assets/prefabi final/Mafin 3/lila.korpica ispecena.prefab
-  artifactKey: Guid(48825fce73299064a9e63e3a6ade636f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/Mafin 3/lila.korpica ispecena.prefab using Guid(48825fce73299064a9e63e3a6ade636f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b5aabe81e9d8497343b93f9f83f69db') in 0.020942 seconds 
+  Time since last request: 0.000067 seconds.
+  path: Assets/Brana/modeli/prefabi/enterijer.prefab
+  artifactKey: Guid(97185e989fc8b94458a4abde37209cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/enterijer.prefab using Guid(97185e989fc8b94458a4abde37209cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b64b2e5b0b54e03b5f807e4670fd637') in 0.047647 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000026 seconds.
-  path: Assets/prefabi final/Mafin 3/lila.korpica sa filom.prefab
-  artifactKey: Guid(49b11acb41857604eb224da22b4903eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/Mafin 3/lila.korpica sa filom.prefab using Guid(49b11acb41857604eb224da22b4903eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '368aac29be223c575a0534403602be2c') in 0.021424 seconds 
+  path: Assets/Brana/modeli/prefabi/jedinica1.1.prefab
+  artifactKey: Guid(ef29e4caccb1291409acf2d72037e78f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/prefabi/jedinica1.1.prefab using Guid(ef29e4caccb1291409acf2d72037e78f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be0af8e6868b0bf7a43f089ef7649f2') in 0.038360 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.351183 seconds.
-  path: Assets/prefabi final/Mafin 2/plava K.prefab
-  artifactKey: Guid(25dedf209e483204eb37032bd3752bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/Mafin 2/plava K.prefab using Guid(25dedf209e483204eb37032bd3752bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06ac954be52b1dcb0af1c0e73d602442') in 0.018782 seconds 
+  Time since last request: 0.205643 seconds.
+  path: Assets/Brana/modeli 1/FIL2.fbx
+  artifactKey: Guid(f6d5e2283a5919049937dd0adf623c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli 1/FIL2.fbx using Guid(f6d5e2283a5919049937dd0adf623c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2847c67f6e26026aa15243b5c754650') in 0.113654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Brana/modeli 1/korpica sa filom i visnjom.fbx
+  artifactKey: Guid(502c643e9fb03d749895e4d91399b6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli 1/korpica sa filom i visnjom.fbx using Guid(502c643e9fb03d749895e4d91399b6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd83955f82c4605a2ee6289305b7da1e7') in 0.049603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Brana/modeli 1/korpica.fbx
+  artifactKey: Guid(3c9c28406cd08a049a9920907e180438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli 1/korpica.fbx using Guid(3c9c28406cd08a049a9920907e180438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '708d2cfd316903846fa3b538f195068e') in 0.028015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Brana/modeli 1/traka.fbx
+  artifactKey: Guid(6c21712811e2e454595e13ea9cc65751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli 1/traka.fbx using Guid(6c21712811e2e454595e13ea9cc65751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5031aa0d504471446a234d8f6b10e691') in 0.093068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Brana/modeli 1/korpica sa testom.fbx
+  artifactKey: Guid(0678670a042f8be42bdc04619b76c278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli 1/korpica sa testom.fbx using Guid(0678670a042f8be42bdc04619b76c278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e4a880256e2de2f10c450f86c6f6b5') in 0.034254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Brana/modeli 1/rerna.fbx
+  artifactKey: Guid(5d380e2074460e842bbab4db57bdc630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli 1/rerna.fbx using Guid(5d380e2074460e842bbab4db57bdc630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aca49685e4e7ca2ff1ced299722c7333') in 0.051872 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000035 seconds.
-  path: Assets/prefabi final/Mafin 2/plava.korpica sa filom.prefab
-  artifactKey: Guid(1b84d1299f0c87a4ca11c630e8fe3bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/Mafin 2/plava.korpica sa filom.prefab using Guid(1b84d1299f0c87a4ca11c630e8fe3bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd98a112d6c844e4aa9f46d1157232fcb') in 0.026753 seconds 
+  path: Assets/Brana/modeli 1/korpica ispecena.fbx
+  artifactKey: Guid(d26450ca50c34094492f172d609765db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli 1/korpica ispecena.fbx using Guid(d26450ca50c34094492f172d609765db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa187613790226057d42433bf414f152') in 0.031313 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.405535 seconds.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Brana/modeli 1/korpica sa filom.fbx
+  artifactKey: Guid(95016d630b59c7f49afdf11699051ec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli 1/korpica sa filom.fbx using Guid(95016d630b59c7f49afdf11699051ec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcbf377a3152f9f312b5d1ff019d6c90') in 0.034550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.411326 seconds.
+  path: Assets/Brana/modeli/zid staklo.fbx
+  artifactKey: Guid(502122964ed2a274c9968a258557a891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brana/modeli/zid staklo.fbx using Guid(502122964ed2a274c9968a258557a891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3065b0c6d5b3796ac728f837727040fd') in 0.061298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3697.332267 seconds.
+  path: Assets/prefabi final/cela traka2.prefab
+  artifactKey: Guid(b294114cebf11b143ad4db2590368cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/cela traka2.prefab using Guid(b294114cebf11b143ad4db2590368cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7c5dba00a1ce6125472bdf13f8a7e9') in 0.388500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/prefabi final/enterijer.prefab
+  artifactKey: Guid(cf725218a51c9b24b9073d03782a76f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/enterijer.prefab using Guid(cf725218a51c9b24b9073d03782a76f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a076548db94566bb4c73328ff56013b9') in 0.067997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.855511 seconds.
   path: Assets/prefabi final/Mafin 1/zel.korpica sa filom i visnjom.prefab
-  artifactKey: Guid(4f0a16102a0e6e248b275f122b305f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabi final/Mafin 1/zel.korpica sa filom i visnjom.prefab using Guid(4f0a16102a0e6e248b275f122b305f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e010e1da6526585b43517d57fb79b0e') in 0.021653 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  artifactKey: Guid(0ce0d8e7503d8934fba75a34f8b0736e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 1/zel.korpica sa filom i visnjom.prefab using Guid(0ce0d8e7503d8934fba75a34f8b0736e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae59e593d82fad9a0e4ea09f513f830f') in 0.043324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/prefabi final/Mafin 1/zel.korpica sa filom.prefab
+  artifactKey: Guid(8bc88ade0af41104597deb778be2d397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 1/zel.korpica sa filom.prefab using Guid(8bc88ade0af41104597deb778be2d397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56f89a2f99d9d41e86915907c8484761') in 0.040285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.270374 seconds.
+  path: Assets/prefabi final/Mafin 2/plava K.prefab
+  artifactKey: Guid(f02e4521bc997c841a24e7815d05ce55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 2/plava K.prefab using Guid(f02e4521bc997c841a24e7815d05ce55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f255d3696389c22cfe3d72e1a81b0a7d') in 0.026813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/prefabi final/Mafin 2/plava.korpica sa filom.prefab
+  artifactKey: Guid(1469e66d2d84d1643821cb036d6474c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 2/plava.korpica sa filom.prefab using Guid(1469e66d2d84d1643821cb036d6474c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003ef00a56d18e11f0d0d1256e6b4873') in 0.032533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/prefabi final/Mafin 2/plava.korpica sa testom.prefab
+  artifactKey: Guid(31a7790a3b1c69a41aa7a6274ec9df06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 2/plava.korpica sa testom.prefab using Guid(31a7790a3b1c69a41aa7a6274ec9df06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd7d3954df62570f44aa4a74fd13097a') in 0.025053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.231041 seconds.
+  path: Assets/prefabi final/Mafin 4/zuta.korpica ispecena.prefab
+  artifactKey: Guid(5d819d5c937a48b46949b9cb54147897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 4/zuta.korpica ispecena.prefab using Guid(5d819d5c937a48b46949b9cb54147897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0127ac3e145bbb6db2103caaff7da24') in 0.027932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/prefabi final/Mafin 4/zuta.korpica sa filom.prefab
+  artifactKey: Guid(56ce64098a733cd43b1bbcb81ad10e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 4/zuta.korpica sa filom.prefab using Guid(56ce64098a733cd43b1bbcb81ad10e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6868754f0d48a5e8dfdd8695191a04a') in 0.040483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/prefabi final/Mafin 4/zuta.korpica sa testom.prefab
+  artifactKey: Guid(aec71d3b647f0604c9680cfcdede18de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/Mafin 4/zuta.korpica sa testom.prefab using Guid(aec71d3b647f0604c9680cfcdede18de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b9d24c7ba8a43613fff5d2a53b94115') in 0.024453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.385654 seconds.
+  path: Assets/Prefabs/MuffinNumber.prefab
+  artifactKey: Guid(43519c4f109398840b76edcd25d4b7bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MuffinNumber.prefab using Guid(43519c4f109398840b76edcd25d4b7bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ae67ea47e900efc7956695aae84161') in 0.048033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.486620 seconds.
+  path: Assets/Prefabs/Trake/cela traka2.prefab
+  artifactKey: Guid(f669ebcafd4007d49adc0365f45a8055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trake/cela traka2.prefab using Guid(f669ebcafd4007d49adc0365f45a8055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b183575c2dbdee7ab523a1280959fcd') in 0.043237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Prefabs/Trake/cela traka3.prefab
+  artifactKey: Guid(f21b40c74abfe414f81ea3ae775292a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trake/cela traka3.prefab using Guid(f21b40c74abfe414f81ea3ae775292a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8fd79f1b031d261db3bda726e5b94fc') in 0.049122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 119.310168 seconds.
+  path: Assets/prefabi final/partikli/jedinica 2 particle/upgrade unit1.prefab
+  artifactKey: Guid(1a8fbc39d4a6bb842bdc1f2b8f8021af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/partikli/jedinica 2 particle/upgrade unit1.prefab using Guid(1a8fbc39d4a6bb842bdc1f2b8f8021af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af9c7ddc01111064a481c07b430bd355') in 0.152900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.553132 seconds.
+  path: Assets/prefabi final/partikli/jedinica 2 particle/upgrade unit1.prefab
+  artifactKey: Guid(1a8fbc39d4a6bb842bdc1f2b8f8021af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabi final/partikli/jedinica 2 particle/upgrade unit1.prefab using Guid(1a8fbc39d4a6bb842bdc1f2b8f8021af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a94ea73aaf69f70f0512ca77c156a0bd') in 0.029680 seconds 
