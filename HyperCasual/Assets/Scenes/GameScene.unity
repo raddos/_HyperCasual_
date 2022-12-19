@@ -437,6 +437,7 @@ GameObject:
   - component: {fileID: 173405617}
   - component: {fileID: 173405616}
   - component: {fileID: 173405620}
+  - component: {fileID: 173405621}
   m_Layer: 5
   m_Name: Upgrade Track
   m_TagString: Untagged
@@ -474,7 +475,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173405614}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: b88c554a82e5329489a688efa432a8bf, type: 2}
   m_CullingMode: 0
@@ -533,6 +534,18 @@ MonoBehaviour:
       - m_Target: {fileID: 942850741}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: UpgradeTrack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 173405621}
+        m_TargetAssemblyTypeName: UIButtonAnimation, Assembly-CSharp
+        m_MethodName: AnimateButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -676,6 +689,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &173405621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173405614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b8a71c3adbfe64d843e101a7249211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wasClicked: 0
 --- !u!1001 &191235919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -848,6 +874,7 @@ GameObject:
   - component: {fileID: 312142864}
   - component: {fileID: 312142863}
   - component: {fileID: 312142866}
+  - component: {fileID: 312142867}
   m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
@@ -933,6 +960,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 312142867}
+        m_TargetAssemblyTypeName: UIButtonAnimation, Assembly-CSharp
+        m_MethodName: AnimateButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &312142864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -979,7 +1018,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312142861}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: f856365232ec8134b9c245eb05a1fbfe, type: 2}
   m_CullingMode: 0
@@ -991,6 +1030,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &312142867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312142861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b8a71c3adbfe64d843e101a7249211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wasClicked: 0
 --- !u!1001 &342145273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2075,6 +2127,7 @@ GameObject:
   - component: {fileID: 562861252}
   - component: {fileID: 562861251}
   - component: {fileID: 562861254}
+  - component: {fileID: 562861255}
   m_Layer: 5
   m_Name: SpawnTimeUpgrade
   m_TagString: Untagged
@@ -2160,6 +2213,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 562861255}
+        m_TargetAssemblyTypeName: UIButtonAnimation, Assembly-CSharp
+        m_MethodName: AnimateButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &562861252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2206,7 +2271,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562861249}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 3d628e0ec918420428ce6308ac3d1fcb, type: 2}
   m_CullingMode: 0
@@ -2218,6 +2283,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &562861255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562861249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b8a71c3adbfe64d843e101a7249211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wasClicked: 0
 --- !u!1 &570130909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2393,6 +2471,7 @@ GameObject:
   - component: {fileID: 595920961}
   - component: {fileID: 595920960}
   - component: {fileID: 595920964}
+  - component: {fileID: 595920965}
   m_Layer: 5
   m_Name: AddTrackUpgrade
   m_TagString: Untagged
@@ -2430,7 +2509,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595920958}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 3d628e0ec918420428ce6308ac3d1fcb, type: 2}
   m_CullingMode: 0
@@ -2489,6 +2568,18 @@ MonoBehaviour:
       - m_Target: {fileID: 942850741}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: AddTrack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 595920965}
+        m_TargetAssemblyTypeName: UIButtonAnimation, Assembly-CSharp
+        m_MethodName: AnimateButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2632,6 +2723,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &595920965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595920958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b8a71c3adbfe64d843e101a7249211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wasClicked: 0
 --- !u!1001 &602772832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2722,6 +2826,7 @@ GameObject:
   - component: {fileID: 622325865}
   - component: {fileID: 622325864}
   - component: {fileID: 622325867}
+  - component: {fileID: 622325868}
   m_Layer: 5
   m_Name: TrackSpeedUpgrade
   m_TagString: Untagged
@@ -2807,6 +2912,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 622325868}
+        m_TargetAssemblyTypeName: UIButtonAnimation, Assembly-CSharp
+        m_MethodName: AnimateButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: TrackSpeedUpgrade
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &622325865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2853,7 +2970,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622325862}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 3d628e0ec918420428ce6308ac3d1fcb, type: 2}
   m_CullingMode: 0
@@ -2865,6 +2982,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &622325868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622325862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b8a71c3adbfe64d843e101a7249211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wasClicked: 0
 --- !u!1001 &625419153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3802,6 +3932,7 @@ GameObject:
   - component: {fileID: 734803320}
   - component: {fileID: 734803319}
   - component: {fileID: 734803322}
+  - component: {fileID: 734803323}
   m_Layer: 5
   m_Name: ToggleSound
   m_TagString: Untagged
@@ -3874,7 +4005,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 734803320}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 734803323}
+        m_TargetAssemblyTypeName: UIButtonAnimation, Assembly-CSharp
+        m_MethodName: AnimateButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &734803320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3921,7 +4064,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734803317}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 01d5551f592c63044a7b2eb6171ca508, type: 2}
   m_CullingMode: 0
@@ -3933,6 +4076,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &734803323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734803317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b8a71c3adbfe64d843e101a7249211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wasClicked: 0
 --- !u!1001 &743588917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7866,6 +8022,7 @@ GameObject:
   - component: {fileID: 1415825510}
   - component: {fileID: 1415825509}
   - component: {fileID: 1415825512}
+  - component: {fileID: 1415825513}
   m_Layer: 5
   m_Name: MuffinUpgrade
   m_TagString: Untagged
@@ -7951,6 +8108,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1415825513}
+        m_TargetAssemblyTypeName: UIButtonAnimation, Assembly-CSharp
+        m_MethodName: AnimateButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1415825510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7997,7 +8166,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415825507}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 3d628e0ec918420428ce6308ac3d1fcb, type: 2}
   m_CullingMode: 0
@@ -8009,6 +8178,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1415825513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415825507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b8a71c3adbfe64d843e101a7249211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wasClicked: 0
 --- !u!1001 &1418088702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10212,6 +10394,7 @@ GameObject:
   - component: {fileID: 1936642404}
   - component: {fileID: 1936642403}
   - component: {fileID: 1936642406}
+  - component: {fileID: 1936642407}
   m_Layer: 5
   m_Name: WaitingTimeUpgrade
   m_TagString: Untagged
@@ -10297,6 +10480,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1936642407}
+        m_TargetAssemblyTypeName: UIButtonAnimation, Assembly-CSharp
+        m_MethodName: AnimateButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1936642404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10343,7 +10538,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936642401}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 3d628e0ec918420428ce6308ac3d1fcb, type: 2}
   m_CullingMode: 0
@@ -10355,6 +10550,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1936642407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936642401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b8a71c3adbfe64d843e101a7249211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wasClicked: 0
 --- !u!4 &1948198579 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5118573943479311829, guid: b530f4f8ed498d54a9052d6f4f63bfdd, type: 3}
@@ -10911,6 +11119,7 @@ GameObject:
   - component: {fileID: 2082894669}
   - component: {fileID: 2082894668}
   - component: {fileID: 2082894671}
+  - component: {fileID: 2082894672}
   m_Layer: 5
   m_Name: CameraSwitch
   m_TagString: Untagged
@@ -10996,6 +11205,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2082894672}
+        m_TargetAssemblyTypeName: UIButtonAnimation, Assembly-CSharp
+        m_MethodName: AnimateButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2082894669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11042,7 +11263,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082894666}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 432af394db0b1f348aec653fb25ed6a1, type: 2}
   m_CullingMode: 0
@@ -11054,6 +11275,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2082894672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082894666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b8a71c3adbfe64d843e101a7249211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wasClicked: 0
 --- !u!1 &2135834990
 GameObject:
   m_ObjectHideFlags: 0
@@ -11067,6 +11301,7 @@ GameObject:
   - component: {fileID: 2135834993}
   - component: {fileID: 2135834992}
   - component: {fileID: 2135834995}
+  - component: {fileID: 2135834996}
   m_Layer: 5
   m_Name: DebugMenuButton
   m_TagString: Untagged
@@ -11150,6 +11385,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2135834996}
+        m_TargetAssemblyTypeName: UIButtonAnimation, Assembly-CSharp
+        m_MethodName: AnimateButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2135834993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11196,7 +11443,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135834990}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 76c3ff907dd40a34f9a46b71e5992c26, type: 2}
   m_CullingMode: 0
@@ -11208,3 +11455,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2135834996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135834990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b8a71c3adbfe64d843e101a7249211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wasClicked: 0
