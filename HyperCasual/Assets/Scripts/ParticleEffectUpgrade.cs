@@ -20,7 +20,7 @@ public class ParticleEffectUpgrade : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("triggered!");
+        //Debug.Log("triggered!");
         particleGameObject = GameObject.FindGameObjectWithTag("UpgradeParticle");
         particleGameObject.transform.position = this.transform.position;
         particleNumber = other.GetComponent<MufinController>().random_number;

@@ -11,7 +11,7 @@ public class UIButtonAnimation : MonoBehaviour
 	if(!wasClicked){
 
 	transform.DOPunchScale(new Vector3(-0.2f, -0.2f, -0.2f), 0.3f, 1, 0.5f);
-	StartCoroutine(DelayTimer());
+		StartCoroutine(DelayTimer());
 	}
 }
 	public IEnumerator DelayTimer()

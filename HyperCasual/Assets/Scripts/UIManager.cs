@@ -12,10 +12,12 @@ public class UIManager : MonoBehaviour
 {
 
     public static UIManager Instance;
-    public static int score = 10000;
-    //Camra anim
+    public static int score = 10000000;
+    //Camera anim
     public Animator _cameraAnimator;
     private bool camera_switch = false;
+    public GameObject cameraNewPositions;
+    private AnimateCameraAngle animCamAngle;
     //Panels 
     public GameObject _debugPanel;
     public GameObject _gamePanel;
@@ -68,10 +70,15 @@ public class UIManager : MonoBehaviour
     private int trackUpgradePrice = 2000;
     public AudioSource upgradeTrackSound;
 
+
+    //Debug
+    bool swichedForDebug = false;
+
     private void Awake()
     {
         Instance= this;
         _buttonPressAudioSource = GetComponent<AudioSource>();   
+        animCamAngle = cameraNewPositions.GetComponent<AnimateCameraAngle>();
     }
 
     private void Start()
@@ -100,7 +107,7 @@ public class UIManager : MonoBehaviour
     public void TrackSpeedUpdate()
     {
             pressed = true;
-        _buttonPressAudioSource.Play();
+            _buttonPressAudioSource.Play();
             ButtonAnimators[0].SetBool("pressed", true);
             pressed = false;
              ButtonAnimators[0].SetBool("pressed", false);
@@ -183,6 +190,8 @@ public class UIManager : MonoBehaviour
             _addtrackText.text= trackAddPrice.ToString();
             if (tracks.numberAddedTracks < 4)
             {
+                Debug.Log("Start moving camera");
+                animCamAngle.MovePosition();
                 _buttonPressAudioSource.Play();
                 tracks.numberAddedTracks++;
                 tracks.AddTrack();
@@ -190,7 +199,9 @@ public class UIManager : MonoBehaviour
             else
                 addTrackButton.interactable = false;
         }
-        }
+
+
+     }
     public void UpgradeTrack()
     {
         if (score >= trackUpgradePrice)
@@ -229,17 +240,26 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public void ToggleSound()
+    {
+        if(AudioListener.volume==0)
+            AudioListener.volume = 1;
+        else
+            AudioListener.volume = 0;
+    }
+
     public void SwitchCamera()
     {
         PanelSwitch();
 
         Time.timeScale = 1;
-        if (!camera_switch){
-            camera_switch = true;
-            _cameraAnimator.SetBool("switch", camera_switch);
-        }else
-            camera_switch= false;
-        _cameraAnimator.SetBool("switch", camera_switch);
+        if (swichedForDebug)
+        {
+            animCamAngle.DebugMovePosition();
+            swichedForDebug = true;
+        }
+        else
+            animCamAngle.MovePosition();
     }
 
     private void PanelSwitch()

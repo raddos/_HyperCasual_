@@ -183,7 +183,7 @@ public class MufinController: MonoBehaviour
             }
             else
             {
-                Debug.Log(_waitingTime);
+               // Debug.Log(_waitingTime);
                 if (position_counter <= 5)
                     StartCoroutine(Wait());
                 else

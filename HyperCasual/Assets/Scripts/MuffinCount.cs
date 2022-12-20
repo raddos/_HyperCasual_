@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,7 +31,7 @@ public class MuffinCount : MonoBehaviour
         {
             SetThreeMuffins();
         }
-        
+
     }
 
 
@@ -39,17 +40,17 @@ public class MuffinCount : MonoBehaviour
         if (!track.isUpgraded)
         {
             Debug.Log("Added double muffins");
-            firstMuffin.transform.position = new Vector3(firstMuffin.transform.position.x,firstMuffin.transform.position.y, 0.5f);
+            firstMuffin.transform.position = new Vector3(firstMuffin.transform.position.x, firstMuffin.transform.position.y, 0.5f);
             GameObject secondMuffin = Instantiate(firstMuffin, new Vector3(firstMuffin.transform.position.x, this.firstMuffin.transform.position.y, -0.5f), Quaternion.identity);
             secondMuffin.transform.parent = this.transform.parent;
-           
+
             track.isUpgraded = true;
 
         }
     }
     void SetThreeMuffins()
     {
-        
+
 
     }
 }

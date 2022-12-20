@@ -20,7 +20,7 @@ public class Track : MonoBehaviour
         _tracks[numberOfUpgrade].SetActive(true);
     }
 
-   public void AddTrack()
+    public void AddTrack()
     {
         Instantiate(track, new Vector3(track.transform.position.x, track.transform.position.y, track.transform.position.z + track_seperation), Quaternion.identity);
         track_seperation += 7f;
@@ -30,7 +30,7 @@ public class Track : MonoBehaviour
     {
         GameObject[] alltracks = GameObject.FindGameObjectsWithTag("track");
 
-        foreach (GameObject track in alltracks) 
+        foreach (GameObject track in alltracks)
         {
             track.transform.GetChild(numberOfUpgrade).gameObject.SetActive(false);
         }
