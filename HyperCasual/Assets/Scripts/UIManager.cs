@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
 {
 
     public static UIManager Instance;
-    public static int score = 10000000;
+    public static int score = 1490;
     //Camera anim
     public Animator _cameraAnimator;
     private bool camera_switch = false;
@@ -88,6 +88,17 @@ public class UIManager : MonoBehaviour
         
     }
 
+    private void Update()
+    {   
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Debug.Log("Space is pressed");
+                score += 1000;
+                _score.text = score.ToString();
+            }
+        
+    }
+
     public void IncreaseScore()
     {
         score += money_per_cookie_base;
@@ -99,8 +110,6 @@ public class UIManager : MonoBehaviour
         score -= upgradeCost;
         _score.text = score.ToString();
     }
-
-
 
 
     #region GamePanel
@@ -189,15 +198,15 @@ public class UIManager : MonoBehaviour
             DecreasScore(trackAddPrice);
             trackAddPrice *= 2;
             _addtrackText.text= trackAddPrice.ToString();
+            tracks.AddTrack();
             if (tracks.numberAddedTracks < 4)
             {
                 Debug.Log("Start moving camera");
-                animCamAngle.MovePosition();
                 _buttonPressAudioSource.Play();
+                animCamAngle.MovePosition();
                 tracks.numberAddedTracks++;
-                tracks.AddTrack();
             }
-            else
+            else 
                 addTrackButton.interactable = false;
         }
 
@@ -254,13 +263,16 @@ public class UIManager : MonoBehaviour
         PanelSwitch();
 
         Time.timeScale = 1;
-        if (swichedForDebug)
+        if (!swichedForDebug)
         {
             animCamAngle.DebugMovePosition();
-            swichedForDebug = true;
+            swichedForDebug= true;
         }
         else
+        {
             animCamAngle.MovePosition();
+            swichedForDebug= false;
+        }
     }
 
     private void PanelSwitch()

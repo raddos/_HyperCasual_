@@ -24,16 +24,17 @@ public class AnimateCameraAngle : MonoBehaviour
         {
             case 0:
                 MoveToPosition1();
+               
                 break;
             case 1:
-                Debug.Log("Started Moving");
                 MoveToPosition2();
+                Debug.Log("Started Moving");
                 break;
             case 2:
                 MoveToPosition3();
                 break;
             case 3:
-                MoveToPosition4();
+                  MoveToPosition4();
                 break;
             case 4:
                 MoveToPosition5();

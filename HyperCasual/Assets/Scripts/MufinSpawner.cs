@@ -74,7 +74,7 @@ public class MufinSpawner : MonoBehaviour
             //if UI is not over screen
             if (!IsPointerOverUIObject())
             {
-                Debug.Log(_speedSpawn);
+                //Debug.Log(_speedSpawn);
                 StartCoroutine(SpawnMuffin()); 
             }
 
@@ -172,7 +172,7 @@ public class MufinSpawner : MonoBehaviour
         //First track
         if (!isOccupied())
         {
-            Debug.Log("not occupied");
+           // Debug.Log("not occupied");
             Instantiate(_muffin);
             yield return null;
         }

@@ -20,19 +20,21 @@ public class ParticleEffectUpgrade : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("triggered!");
-        particleGameObject = GameObject.FindGameObjectWithTag("UpgradeParticle");
-        Debug.Log("ParticleGameobjectname: "+ particleGameObject.name);
-        particleGameObject.transform.position = this.transform.position;
-        Debug.Log("particle pos: "+ particleGameObject.transform.position);
-        particleNumber = other.GetComponent<MufinController>().random_number;
-        Debug.Log("Particle number: "+ particleNumber);
-        allParticles = particleGameObject.transform.GetChild(particleNumber).GetComponentsInChildren<ParticleSystem>();//.GetComponents<ParticleSystem>();
-        foreach (ParticleSystem pr in allParticles)
+        if (other.gameObject.tag == "Muffin")
         {
-            pr.Play();
+            //Debug.Log("triggered!");
+            particleGameObject = GameObject.FindGameObjectWithTag("UpgradeParticle");
+           // Debug.Log("ParticleGameobjectname: " + particleGameObject.name);
+            particleGameObject.transform.position = this.transform.position;
+           // Debug.Log("particle pos: " + particleGameObject.transform.position);
+            particleNumber = other.GetComponent<MufinController>().random_number;
+           // Debug.Log("Particle number: " + particleNumber);
+            allParticles = particleGameObject.transform.GetChild(particleNumber).GetComponentsInChildren<ParticleSystem>();//.GetComponents<ParticleSystem>();
+            foreach (ParticleSystem pr in allParticles)
+            {
+                pr.Play();
+            }
         }
-
     }
 
 

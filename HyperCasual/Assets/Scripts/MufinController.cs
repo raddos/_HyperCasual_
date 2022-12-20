@@ -56,9 +56,10 @@ public class MufinController: MonoBehaviour
     private bool isSecondUpgradeInstance = false;
     int position_counter = 1;
     int mesh_num = 0;
-    public int random_number;
-    public int random_number2;
-    public int random_number3;
+
+    public int random_number = 0;
+    public int random_number2 = 0;
+    public int random_number3 = 0;
 
     private void Awake()
     {
