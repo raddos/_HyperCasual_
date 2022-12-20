@@ -199,11 +199,11 @@ public class UIManager : MonoBehaviour
             trackAddPrice *= 2;
             _addtrackText.text= trackAddPrice.ToString();
             tracks.AddTrack();
+            animCamAngle.MovePosition();
             if (tracks.numberAddedTracks < 4)
             {
                 Debug.Log("Start moving camera");
                 _buttonPressAudioSource.Play();
-                animCamAngle.MovePosition();
                 tracks.numberAddedTracks++;
             }
             else 
@@ -217,12 +217,13 @@ public class UIManager : MonoBehaviour
         if (score >= trackUpgradePrice)
         {
           
-            DecreasScore(trackSpeedUpgrade);
             trackUpgradePrice *= 6;
             trackUpgradeText.text = trackUpgradePrice.ToString();
+
             tracks.numberOfUpgrade++;
             _buttonPressAudioSource.Play();
             upgradeTrackSound.Play();
+
             if (tracks.numberOfUpgrade == 2)
             {
                 upgradeTrackButton.interactable = false;
