@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
     public Animator _cameraAnimator;
     private bool camera_switch = false;
     public GameObject cameraNewPositions;
-    private AnimateCameraAngle animCamAngle;
+    public AnimateCameraAngle animCamAngle;
     //Panels 
     public GameObject _debugPanel;
     public GameObject _gamePanel;
@@ -78,13 +78,14 @@ public class UIManager : MonoBehaviour
     {
         Instance= this;
         _buttonPressAudioSource = GetComponent<AudioSource>();   
-        animCamAngle = cameraNewPositions.GetComponent<AnimateCameraAngle>();
+        //animCamAngle = cameraNewPositions.GetComponent<AnimateCameraAngle>();
     }
 
     private void Start()
     {
         //Set all prices to textfields;
         _score.text = score.ToString();
+        
     }
 
     public void IncreaseScore()

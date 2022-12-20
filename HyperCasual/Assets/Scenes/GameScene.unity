@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: bbbcd551076325545ba102ba8c308520, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.2217727, g: 0.7096865, b: 0.781853, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -960,18 +960,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 312142867}
-        m_TargetAssemblyTypeName: UIButtonAnimation, Assembly-CSharp
-        m_MethodName: AnimateButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &312142864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1146,14 +1134,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348188315}
-  m_LocalRotation: {x: 0.30732176, y: -0.1333109, z: 0.042021256, w: 0.9412841}
-  m_LocalPosition: {x: 13.2, y: 35.4, z: -51.7}
+  m_LocalRotation: {x: 0.30041954, y: 0.041600566, z: -0.013116606, w: 0.9528093}
+  m_LocalPosition: {x: 7.6, y: 12.4, z: -31.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 790243431}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 36.14, y: -16.188, z: -0.201}
+  m_LocalEulerAnglesHint: {x: 35, y: 5, z: 0}
 --- !u!114 &348188317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1218,9 +1206,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 15.6
   far clip plane: 1000
-  field of view: 60
+  field of view: 100
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -2014,7 +2002,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &553310192
 Transform:
   m_ObjectHideFlags: 0
@@ -2022,14 +2010,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 553310191}
-  m_LocalRotation: {x: 0.28056404, y: -0.13444653, z: 0.038232256, w: 0.9496032}
-  m_LocalPosition: {x: 9.799999, y: 22.5, z: -40.4}
+  m_LocalRotation: {x: 0.30041954, y: 0.041600566, z: -0.013116606, w: 0.9528093}
+  m_LocalPosition: {x: 7.44, y: 9.95, z: -33.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 790243431}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 32.897, y: -16.174, z: -0.193}
+  m_LocalEulerAnglesHint: {x: 35, y: 5, z: 0}
 --- !u!114 &553310193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2078,7 +2066,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 553310191}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -2096,7 +2084,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 104
+  field of view: 100
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -3375,7 +3363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1215907823811279167, guid: 74a548f02121cb54eb43cb42314531f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 238.2
+      value: 252.6
       objectReference: {fileID: 0}
     - target: {fileID: 1215907823811279167, guid: 74a548f02121cb54eb43cb42314531f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3383,7 +3371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1215907823811279167, guid: 74a548f02121cb54eb43cb42314531f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -57
+      value: -55.8
       objectReference: {fileID: 0}
     - target: {fileID: 1215907823811279167, guid: 74a548f02121cb54eb43cb42314531f1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4018,18 +4006,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11500000, guid: c2b8a71c3adbfe64d843e101a7249211, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: set_name
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &734803320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4228,12 +4204,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   main: {fileID: 963194227}
-  cameraTransform: {fileID: 0}
   cameraTransform1: {fileID: 553310191}
   cameraTransform2: {fileID: 2028841074}
   cameraTransform3: {fileID: 1923562675}
   cameraTransform4: {fileID: 1053200117}
   cameraTransform5: {fileID: 0}
+  cameraDebugTransform: {fileID: 0}
 --- !u!1001 &812246243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4913,6 +4889,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraAnimator: {fileID: 963194230}
+  cameraNewPositions: {fileID: 0}
+  animCamAngle: {fileID: 790243432}
   _debugPanel: {fileID: 1843211194}
   _gamePanel: {fileID: 570130909}
   _score: {fileID: 1143905407}
@@ -5418,7 +5396,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 90
+  field of view: 100
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -5443,14 +5421,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.13870417, y: -0.3726112, z: 0.056431547, w: -0.91582626}
-  m_LocalPosition: {x: -19.594484, y: 15.0897, z: -17.003075}
+  m_LocalRotation: {x: 0.30041954, y: 0.041600566, z: -0.013116606, w: 0.9528093}
+  m_LocalPosition: {x: -2.2, y: 17.99, z: -25.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 23.171, y: -28.668, z: 0.788}
+  m_LocalEulerAnglesHint: {x: 35, y: 5, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5492,7 +5470,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 20c9305a9e973274d8f2fd896d605c17, type: 2}
   m_CullingMode: 0
@@ -5615,7 +5593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2756525711880079294, guid: 97185e989fc8b94458a4abde37209cf5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.000027
+      value: -33.500027
       objectReference: {fileID: 0}
     - target: {fileID: 2756525711880079294, guid: 97185e989fc8b94458a4abde37209cf5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5623,7 +5601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2756525711880079294, guid: 97185e989fc8b94458a4abde37209cf5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21.889992
+      value: -5.7100086
       objectReference: {fileID: 0}
     - target: {fileID: 2756525711880079294, guid: 97185e989fc8b94458a4abde37209cf5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5768,14 +5746,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053200117}
-  m_LocalRotation: {x: 0.3288363, y: -0.13231172, z: 0.045068685, w: 0.93398565}
-  m_LocalPosition: {x: 23.9, y: 74.9, z: -89.1}
+  m_LocalRotation: {x: 0.47509915, y: 0.04083992, z: -0.01532163, w: 0.8788505}
+  m_LocalPosition: {x: 6.7, y: 25.799997, z: -20.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 790243431}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 38.769, y: -16.199, z: -0.208}
+  m_LocalEulerAnglesHint: {x: 56.755, y: 5.992, z: 1.241}
 --- !u!114 &1053200119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5842,7 +5820,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 95
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -7269,7 +7247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244672408}
   m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -35.2, y: -5.2, z: -3.3}
+  m_LocalPosition: {x: -38.7, y: -5.2, z: -30.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9107,7 +9085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1215907823811279167, guid: 74a548f02121cb54eb43cb42314531f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 208.4
+      value: 284.1
       objectReference: {fileID: 0}
     - target: {fileID: 1215907823811279167, guid: 74a548f02121cb54eb43cb42314531f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9115,7 +9093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1215907823811279167, guid: 74a548f02121cb54eb43cb42314531f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -52.3
+      value: -72.6
       objectReference: {fileID: 0}
     - target: {fileID: 1215907823811279167, guid: 74a548f02121cb54eb43cb42314531f1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10244,14 +10222,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923562675}
-  m_LocalRotation: {x: 0.3431727, y: -0.13160236, z: 0.047099814, w: 0.92881376}
-  m_LocalPosition: {x: 20.7, y: 63.6, z: -77.7}
+  m_LocalRotation: {x: 0.40764713, y: 0.04080198, z: -0.0154224755, w: 0.91209716}
+  m_LocalPosition: {x: 6.9, y: 21.299997, z: -32.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 790243431}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 40.533, y: -16.208, z: -0.213}
+  m_LocalEulerAnglesHint: {x: 48.149, y: 5.32, z: 0.441}
 --- !u!114 &1923562677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10318,7 +10296,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 95
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -10800,14 +10778,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028841074}
-  m_LocalRotation: {x: 0.32296118, y: -0.13259228, z: 0.044236425, w: 0.93603337}
-  m_LocalPosition: {x: 17.1, y: 50.2, z: -65.9}
+  m_LocalRotation: {x: 0.31537047, y: 0.041389085, z: -0.013769379, w: 0.9479656}
+  m_LocalPosition: {x: 7.1, y: 18, z: -36.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 790243431}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 38.049, y: -16.196, z: -0.206}
+  m_LocalEulerAnglesHint: {x: 36.803, y: 5, z: 0}
 --- !u!114 &2028841076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10872,9 +10850,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 2.57
   far clip plane: 1000
-  field of view: 60
+  field of view: 100
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -11237,18 +11215,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2082894672}
-        m_TargetAssemblyTypeName: UIButtonAnimation, Assembly-CSharp
-        m_MethodName: AnimateButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &2082894669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11408,18 +11374,6 @@ MonoBehaviour:
       - m_Target: {fileID: 942850741}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2135834996}
-        m_TargetAssemblyTypeName: UIButtonAnimation, Assembly-CSharp
-        m_MethodName: AnimateButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
