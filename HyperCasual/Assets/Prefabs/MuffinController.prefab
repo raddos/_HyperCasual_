@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 2939466632153492868}
   m_Layer: 0
   m_Name: MuffinController
-  m_TagString: Untagged
+  m_TagString: Muffin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,6 +159,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8b37be547c243a94fa13009285455994, type: 3}
   muffinUpgradeParticles: []
   muffinEndParticles: []
+  random_number: 0
+  random_number2: 0
+  random_number3: 0
 --- !u!65 &4915396211565848988
 BoxCollider:
   m_ObjectHideFlags: 0
