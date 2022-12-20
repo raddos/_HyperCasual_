@@ -4225,6 +4225,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1290562553}
     m_Modifications:
+    - target: {fileID: 253039850687436085, guid: 02fab1c6300b4bc468b978fb0f550237, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 253039850687436085, guid: 02fab1c6300b4bc468b978fb0f550237, type: 3}
+      propertyPath: ClampVelocityModule.magnitude.scalar
+      value: 1.7
+      objectReference: {fileID: 0}
     - target: {fileID: 2884071858638130817, guid: 02fab1c6300b4bc468b978fb0f550237, type: 3}
       propertyPath: m_Name
       value: end lila
@@ -7896,6 +7904,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1290562553}
     m_Modifications:
+    - target: {fileID: 253039850687436085, guid: b530f4f8ed498d54a9052d6f4f63bfdd, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 253039850687436085, guid: b530f4f8ed498d54a9052d6f4f63bfdd, type: 3}
+      propertyPath: ClampVelocityModule.magnitude.scalar
+      value: 1.7
+      objectReference: {fileID: 0}
     - target: {fileID: 2884071858638130817, guid: b530f4f8ed498d54a9052d6f4f63bfdd, type: 3}
       propertyPath: m_Name
       value: end crvena
@@ -8462,6 +8478,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1290562553}
     m_Modifications:
+    - target: {fileID: 253039850687436085, guid: 1c471ba5341587948a28155c486705e2, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 253039850687436085, guid: 1c471ba5341587948a28155c486705e2, type: 3}
+      propertyPath: ClampVelocityModule.magnitude.scalar
+      value: 1.7
+      objectReference: {fileID: 0}
     - target: {fileID: 2884071858638130817, guid: 1c471ba5341587948a28155c486705e2, type: 3}
       propertyPath: m_Name
       value: end zuta
@@ -8523,6 +8547,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1290562553}
     m_Modifications:
+    - target: {fileID: 253039850687436085, guid: 37dcad16fb3eb324594e35c0ca58933f, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 253039850687436085, guid: 37dcad16fb3eb324594e35c0ca58933f, type: 3}
+      propertyPath: ClampVelocityModule.magnitude.scalar
+      value: 1.7
+      objectReference: {fileID: 0}
     - target: {fileID: 2884071858638130817, guid: 37dcad16fb3eb324594e35c0ca58933f, type: 3}
       propertyPath: m_Name
       value: end zelena
@@ -9010,6 +9042,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1290562553}
     m_Modifications:
+    - target: {fileID: 253039850687436085, guid: 2a12f3d9e64651c41bcb2616f300ae4c, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 253039850687436085, guid: 2a12f3d9e64651c41bcb2616f300ae4c, type: 3}
+      propertyPath: ClampVelocityModule.magnitude.scalar
+      value: 1.7
+      objectReference: {fileID: 0}
     - target: {fileID: 2884071858638130817, guid: 2a12f3d9e64651c41bcb2616f300ae4c, type: 3}
       propertyPath: m_Name
       value: end plava
